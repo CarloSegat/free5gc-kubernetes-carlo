@@ -10,6 +10,8 @@ RUN apk --no-cache add iproute2 iptables
 
 WORKDIR /free5gc
 RUN mkdir -p config/ upf/
+RUN apk update
+RUN apk --no-cache add tcpdump
 
 # Copy executable and default configs/certs
 COPY --from=builder /free5gc/upf ./upf/

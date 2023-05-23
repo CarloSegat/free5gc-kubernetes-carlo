@@ -39,7 +39,7 @@ FROM alpine
 WORKDIR /free5gc
 
 RUN mkdir -p config/ config/TLS/ public
-RUN apk --no-cache add tcpdump
+
 
 # Copy executables
 COPY --from=builder /go/src/free5gc/bin/* ./

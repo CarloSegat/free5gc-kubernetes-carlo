@@ -7,6 +7,8 @@ ENV GIN_MODE="release"
 
 WORKDIR /free5gc
 RUN mkdir -p log/ config/ TLS/ amf/
+RUN apk update
+RUN apk --no-cache add tcpdump
 
 # Copy executable and default certs/configs
 COPY --from=builder /free5gc/amf ./amf

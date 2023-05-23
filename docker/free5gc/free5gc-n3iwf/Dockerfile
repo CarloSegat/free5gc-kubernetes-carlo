@@ -10,6 +10,8 @@ RUN apk add -U iproute2
 
 WORKDIR /free5gc
 RUN mkdir -p log/ config/TLS/ n3iwf/
+RUN apk update
+RUN apk --no-cache add tcpdump
 
 # Copy executable and default certs/configs
 COPY --from=builder /free5gc/n3iwf ./n3iwf
