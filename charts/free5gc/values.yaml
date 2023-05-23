@@ -7,8 +7,8 @@
 # the text of which is available at todo
 # or see the "LICENSE" file for more details.
 #
-# Author: Abderaouf KHICHANE, Ilhem FAJJARI, Ayoub BOUSSELMI
-# Software description: An open-source project providing Helm charts to deploy 5G components (Core + RAN) on top of Kubernetes
+# Author Hai Dinh-Tuan
+# Software description: Helm charts to deploy free5GC core components and UE + RAN on top of Kubernetes
 #
 # Default values for free5gc-chart.
 # This is a YAML-formatted file.
