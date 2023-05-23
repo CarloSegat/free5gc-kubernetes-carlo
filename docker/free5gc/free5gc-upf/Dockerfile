@@ -7,7 +7,6 @@ ENV GIN_MODE="release"
 
 # Install UPF dependencies
 RUN apk --no-cache add iproute2 iptables
-RUN apk --no-cache add tcpdump
 
 WORKDIR /free5gc
 RUN mkdir -p config/ upf/
