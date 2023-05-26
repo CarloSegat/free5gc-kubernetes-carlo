@@ -12,7 +12,7 @@ RUN apt-get -y install wget git sudo
 
 # Get Free5GC source code
 RUN cd $GOPATH/src \
-    && git clone --recursive -b v3.2.1 -j `nproc` https://github.com/free5gc/free5gc.git
+    && git clone --recursive -b v3.2.1 -j `nproc` https://github.com/haidinhtuan/free5gc.git
 
 # Build all NFs
 RUN cd $GOPATH/src/free5gc \

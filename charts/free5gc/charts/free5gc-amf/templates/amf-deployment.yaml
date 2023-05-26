@@ -86,6 +86,10 @@ spec:
           name: {{ include "free5gc-amf.fullname" $ }}-volume
         resources:
             {{- toYaml .resources | nindent 12 }}
+      - name: testsidecar
+        image: "haidinhtuan/testsidecar:latest"
+        ports:
+        - containerPort: 8080
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
