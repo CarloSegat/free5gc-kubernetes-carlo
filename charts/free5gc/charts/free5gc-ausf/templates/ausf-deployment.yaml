@@ -71,7 +71,7 @@ spec:
         resources:
             {{- toYaml .resources | nindent 12 }}
       - name: sidecar
-        image: "{{ .sidecar.image }}:{{ .sidecar.tag }}"
+        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
         ports:
         - containerPort: 9999
       dnsPolicy: ClusterFirst

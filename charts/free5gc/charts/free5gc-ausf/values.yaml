@@ -37,6 +37,12 @@ initcontainers:
     image: busybox
     tag: "1.32.0"
 
+sidecar:
+  image: haidinhtuan/sidecar
+  tag: latest
+  service:
+    type: ClusterIP
+    port: 9999
 
 ausf:
   name: ausf
@@ -44,12 +50,6 @@ ausf:
   image:
     name: haidinhtuan/free5gc-ausf
     pullPolicy: Always
-  sidecar:
-    image: haidinhtuan/sidecar
-    tag: latest
-    service:
-      type: ClusterIP
-      port: 9999
   service:
     type: ClusterIP
     port: 80
