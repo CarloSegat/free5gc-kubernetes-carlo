@@ -86,6 +86,10 @@ spec:
           name: {{ include "free5gc-amf.fullname" $ }}-volume
         resources:
             {{- toYaml .resources | nindent 12 }}
+      - name: sidecar
+        image: "{{ .sidecar.image }}:{{ .sidecar.tag }}"
+        ports:
+        - containerPort: 9999
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
@@ -94,6 +98,7 @@ spec:
         {{- toYaml .affinity | nindent 8 }}
       tolerations:
         {{- toYaml .tolerations | nindent 8 }}
+
 
       volumes:
       - name: {{ include "free5gc-amf.fullname" $ }}-volume
