@@ -1,0 +1,21 @@
+{{- with .Values.amff }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "free5gc-amf.fullname" $ }}-sidecar-service
+  labels:
+    {{- include "free5gc-amf.labels" $ | nindent 4 }}
+    project: {{ $.Values.global.projectName }}
+    nf: {{ .name }}
+spec:
+  type: {{ $.Values.sidecar.service.type }}
+  ports:
+    - port: {{ $.Values.sidecar.service.port }}
+      targetPort: 9999
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "free5gc-amf.selectorLabels" $ | nindent 4 }}
+    project: {{ $.Values.global.projectName }}
+    nf: {{ .name }}
+{{- end }}
