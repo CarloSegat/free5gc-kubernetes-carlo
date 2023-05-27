@@ -1,4 +1,4 @@
-{{- with .Values.asidecar }}
+{{- with .Values.ausf }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -8,10 +8,10 @@ metadata:
     project: {{ $.Values.global.projectName }}
     nf: {{ .name }}
 spec:
-  type: {{ .service.type }}
+  type: {{ $.Values.sidecar.service.type }}
   ports:
-    - port: {{ .service.port }}
-      targetPort: {{ .service.port }}
+    - port: {{ $.Values.sidecar.service.port }}
+      targetPort: 9999
       protocol: TCP
       name: http
   selector:
