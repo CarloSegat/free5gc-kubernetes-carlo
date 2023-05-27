@@ -37,6 +37,7 @@ initcontainers:
     image: busybox
     tag: "1.32.0"
 
+
 ausf:
   name: ausf
   replicaCount: 1
@@ -46,6 +47,9 @@ ausf:
   sidecar:
     image: haidinhtuan/sidecar
     tag: latest
+    service:
+      type: ClusterIP
+      port: 9999
   service:
     type: ClusterIP
     port: 80
