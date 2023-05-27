@@ -1,3 +1,4 @@
+{{- with .Values.asidecar }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -7,13 +8,14 @@ metadata:
     project: {{ $.Values.global.projectName }}
     nf: {{ .name }}
 spec:
-  type: NodePort
+  type: {{ .service.type }}
   ports:
-    - port: 9999
-      targetPort: 9999
+    - port: {{ .service.port }}
+      targetPort: {{ .service.port }}
       protocol: TCP
       name: http
   selector:
     {{- include "free5gc-ausf.selectorLabels" $ | nindent 4 }}
     project: {{ $.Values.global.projectName }}
     nf: {{ .name }}
+{{- end }}
