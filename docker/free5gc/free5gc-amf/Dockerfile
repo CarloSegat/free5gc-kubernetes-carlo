@@ -20,4 +20,3 @@ VOLUME [ "/free5gc/config" ]
 #VOLUME [ "/free5gc/config/TLS" ]
 
 WORKDIR /free5gc/amf
-

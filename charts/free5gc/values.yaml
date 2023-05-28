@@ -19,9 +19,9 @@ global:
   userPlaneArchitecture: single  # possible values are "single" and "ulcl"
   nrf:
     service:
-      name: nrf-nnrf
+      name: localhost
       type: ClusterIP
-      port: "8000"
+      port: "7777"
       nodePort: "30800"
   sbi:
     scheme: http
