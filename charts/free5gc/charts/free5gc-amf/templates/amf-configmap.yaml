@@ -42,7 +42,7 @@ data:
           key: config/TLS/amf.key
           pem: config/TLS/amf.pem
 
-      nrfUri: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
+      nrfUri: "http://130.149.223.200:7777"
 
       {{- .configuration.configuration | nindent 6 }}
 
