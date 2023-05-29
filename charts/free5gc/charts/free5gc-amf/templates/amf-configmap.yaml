@@ -10,6 +10,8 @@
 # Author: Abderaouf KHICHANE, Ilhem FAJJARI, Ayoub BOUSSELMI
 # Software description: An open-source project providing Helm charts to deploy 5G components (Core + RAN) on top of Kubernetes
 #
+#      nrfUri: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
+
 {{- with .Values.amf }}
 apiVersion: v1
 kind: ConfigMap
@@ -42,7 +44,7 @@ data:
           key: config/TLS/amf.key
           pem: config/TLS/amf.pem
 
-      nrfUri: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
+      nrfUri: "http://nnrf-nrf:9999"
 
       {{- .configuration.configuration | nindent 6 }}
 
