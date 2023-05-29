@@ -44,7 +44,7 @@ data:
           key: config/TLS/amf.key
           pem: config/TLS/amf.pem
 
-      nrfUri: "http://localhost:9999"
+      nrfUri: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
 
       {{- .configuration.configuration | nindent 6 }}
 

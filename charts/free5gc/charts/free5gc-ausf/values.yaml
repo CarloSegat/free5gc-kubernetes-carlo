@@ -21,9 +21,9 @@ global:
   projectName: free5gc
   nrf:
     service:
-      name: nrf-nnrf
+      name: localhost
       type: ClusterIP
-      port: "8000"
+      port: 9999
       nodePort: "30800"
   sbi:
     scheme: http

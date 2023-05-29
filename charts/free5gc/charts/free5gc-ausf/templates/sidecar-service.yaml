@@ -5,8 +5,7 @@ metadata:
   name: {{ include "free5gc-ausf.fullname" $ }}-sidecar-service
   labels:
     {{- include "free5gc-ausf.labels" $ | nindent 4 }}
-    project: {{ $.Values.global.projectName }}
-    nf: {{ .name }}
+    container:  {{ $.Values.sidecar.name }}
 spec:
   type: {{ $.Values.sidecar.service.type }}
   ports:
@@ -16,6 +15,7 @@ spec:
       name: http
   selector:
     {{- include "free5gc-ausf.selectorLabels" $ | nindent 4 }}
-    project: {{ $.Values.global.projectName }}
-    nf: {{ .name }}
+    container:  {{ $.Values.sidecar.name }}
+
 {{- end }}
+
