@@ -81,7 +81,7 @@ spec:
           successThreshold: {{ .readinessProbe.successThreshold }}
           httpGet:
             scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
-            port: {{ $.Values.global.nrf.service.port }}
+            port: 80
         livenessProbe:
           initialDelaySeconds: {{ .livenessProbe.initialDelaySeconds }}
           periodSeconds: {{ .livenessProbe.periodSeconds }}
@@ -90,7 +90,7 @@ spec:
           successThreshold: {{ .livenessProbe.successThreshold }}
           httpGet:
             scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
-            port: {{ $.Values.global.nrf.service.port }}
+            port: 80
       - name: sidecar
         image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
         ports:
