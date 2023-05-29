@@ -65,11 +65,6 @@ spec:
         image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
         ports:
         - containerPort: 9999
-        command: ["/bin/sh"]
-        args:
-          - "-c"
-          - |
-            echo '127.0.0.1 ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin nrf-nnrf' >> /etc/hosts
       - name: {{ .name }}
         image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
         imagePullPolicy: {{ .image.pullPolicy }}
