@@ -36,7 +36,7 @@ data:
           key: config/TLS/ausf.key
           pem: config/TLS/ausf.pem
 
-      nrfUri: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
+      nrfUri: "http://localhost:9999"
 
       {{- .configuration.configuration | nindent 6 }}
 
