@@ -90,6 +90,11 @@ spec:
         image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
         ports:
         - containerPort: 9999
+        command: ["/bin/sh"]
+        args:
+          - "-c"
+          - |
+            echo '127.0.0.1 127.0.0.1 ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin nnrf-nrf' >> /etc/hosts
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:

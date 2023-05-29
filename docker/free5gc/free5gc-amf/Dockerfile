@@ -20,5 +20,3 @@ VOLUME [ "/free5gc/config" ]
 #VOLUME [ "/free5gc/config/TLS" ]
 
 WORKDIR /free5gc/amf
-
-RUN echo "127.0.0.1 ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin nnrf-nrf" >> /etc/hosts
