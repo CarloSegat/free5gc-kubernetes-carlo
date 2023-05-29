@@ -60,7 +60,7 @@ spec:
         securityContext:
             {{- toYaml .securityContext | nindent 12 }}
         ports:
-        - containerPort: {{ $.Values.global.nrf.service.port }}
+        - containerPort: 80
         command: ["./nrf"]
         args: ["-c", "../config/nrfcfg.yaml"]
         env:
