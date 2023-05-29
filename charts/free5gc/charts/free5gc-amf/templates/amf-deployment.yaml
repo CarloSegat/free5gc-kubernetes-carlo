@@ -96,7 +96,7 @@ spec:
         resources:
             {{- toYaml .resources | nindent 12 }}
       dnsPolicy: ClusterFirst
-      restartPolicy: Never
+      restartPolicy: Always
       nodeSelector:
         {{- toYaml .nodeSelector | nindent 8 }}
       affinity:
