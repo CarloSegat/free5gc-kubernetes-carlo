@@ -34,7 +34,7 @@ data:
         scheme: {{ $.Values.global.sbi.scheme }}
         registerIPv4: {{ $.Values.global.nrf.service.name }} # IP used to serve NFs or register to another NRF
         bindingIPv4: 0.0.0.0  # IP used to bind the service
-        port: {{ $.Values.global.nrf.service.port }}
+        port: 80
         tls:
           key: config/TLS/nrf.key
           pem: config/TLS/nrf.pem
