@@ -10,7 +10,7 @@ metadata:
 spec:
   type: {{ $.Values.sidecar.service.type }}
   ports:
-    - port: {{ $.Values.sidecar.service.port }}
+    - port: 9999
       targetPort: 9999
       protocol: TCP
       name: http
