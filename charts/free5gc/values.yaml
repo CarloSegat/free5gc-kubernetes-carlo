@@ -86,7 +86,6 @@ global:
     gatewayIP: 10.100.50.230
     excludeIP: 10.100.50.230
 
-
 # These parameters can be used to enable/disable deployment of subcharts
 deployMongoDb: true
 deployAmf: true

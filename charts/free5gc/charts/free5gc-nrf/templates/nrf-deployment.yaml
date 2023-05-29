@@ -91,6 +91,10 @@ spec:
           httpGet:
             scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
             port: {{ $.Values.global.nrf.service.port }}
+      - name: sidecar
+        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
+        ports:
+        - containerPort: 9999
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
