@@ -23,7 +23,7 @@ global:
     service:
       name: nrf-nnrf
       type: ClusterIP
-      port: "8000"
+      port: 9999
       nodePort: "30800"
   sbi:
     scheme: http
@@ -36,6 +36,15 @@ initcontainers:
   busybox:
     image: busybox
     tag: "1.32.0"
+
+sidecar:
+  name: sidecar
+  image: haidinhtuan/sidecar
+  tag: latest
+  service:
+    type: ClusterIP
+    port: 9999
+
 
 nssf:
   name: nssf

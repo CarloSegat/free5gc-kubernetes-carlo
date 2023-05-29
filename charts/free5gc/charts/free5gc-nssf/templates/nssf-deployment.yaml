@@ -49,8 +49,8 @@ spec:
         {{- end }}
         env:
         - name: DEPENDENCIES
-          value: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
-        command: ['sh', '-c', 'set -x; for dependency in $DEPENDENCIES; do while [ $(curl --insecure --connect-timeout 1 -s -o /dev/null -w "%{http_code}" $dependency) -ne 200 ]; do echo waiting for dependencies; sleep 1; done; done;']
+          value: http://nrf-nnrf:80
+        command: ['sh', '-c', 'set -x; for dependency in $DEPENDENCIES; do while [ $(curl --insecure --connect-timeout 1 -s -o /dev/null -w "%{http_code}" $dependency) -ne 200 ]; do echo waiting for dependencies; sleep 1; done; done; echo "127.0.0.1 ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin nrf-nnrf" >> /etc/hosts']
 
       containers:
       - name: {{ .name }}
@@ -58,6 +58,11 @@ spec:
         imagePullPolicy: {{ .image.pullPolicy }}
         securityContext:
             {{- toYaml .securityContext | nindent 12 }}
+        command: ["/bin/sh"]
+        args:
+          - "-c"
+          - |
+            echo '127.0.0.1 ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin nrf-nnrf' >> /etc/hosts
         ports:
         - containerPort: {{ .service.port }}
         command: ["./nssf"]
@@ -70,6 +75,10 @@ spec:
           name: {{ include "free5gc-nssf.fullname" $ }}-volume
         resources:
             {{- toYaml .resources | nindent 12 }}
+      - name: sidecar
+        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
+        ports:
+        - containerPort: 9999
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:

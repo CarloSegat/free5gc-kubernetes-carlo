@@ -22,7 +22,7 @@ global:
   
   nrf:
     service:
-      name: localhost
+      name: nrf-nnrf
       type: ClusterIP
       port: 9999
       nodePort: "30800"
