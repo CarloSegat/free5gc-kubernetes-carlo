@@ -61,6 +61,7 @@ initcontainers:
 isNgapNeeded: true
 
 sidecar:
+  name: sidecar
   image: haidinhtuan/sidecar
   tag: latest
   service:

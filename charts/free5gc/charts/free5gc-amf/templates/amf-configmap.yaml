@@ -44,7 +44,7 @@ data:
           key: config/TLS/amf.key
           pem: config/TLS/amf.pem
 
-      nrfUri: "http://nrf-nnrf:9999"
+      nrfUri: "http://localhost:9999"
 
       {{- .configuration.configuration | nindent 6 }}
 

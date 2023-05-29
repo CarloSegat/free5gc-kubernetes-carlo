@@ -5,8 +5,6 @@ metadata:
   name: {{ include "free5gc-amf.fullname" $ }}-sidecar-service
   labels:
     {{- include "free5gc-amf.labels" $ | nindent 4 }}
-    project: {{ $.Values.global.projectName }}
-    nf: {{ .name }}
     container:  {{ $.Values.sidecar.name }}
 spec:
   type: {{ $.Values.sidecar.service.type }}
@@ -17,8 +15,6 @@ spec:
       name: http
   selector:
     {{- include "free5gc-amf.selectorLabels" $ | nindent 4 }}
-    project: {{ $.Values.global.projectName }}
-    nf: {{ .name }}
     container:  {{ $.Values.sidecar.name }}
 
 {{- end }}
