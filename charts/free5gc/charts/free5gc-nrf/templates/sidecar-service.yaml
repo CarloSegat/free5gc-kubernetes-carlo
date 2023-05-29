@@ -2,21 +2,19 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: "{{ include "free5gc-nrf.fullname" $ }}-sidecar-service"
+  name: {{ include "free5gc-nrf.fullname" $ }}-sidecar-service
   labels:
     {{- include "free5gc-nrf.labels" $ | nindent 4 }}
-    project: {{ $.Values.global.projectName }}
-    nf: {{ .name }}
+    container:  {{ $.Values.sidecar.name }}
 spec:
   type: {{ $.Values.sidecar.service.type }}
   ports:
-    - port: 9999
+    - port: {{ $.Values.sidecar.service.port }}
       targetPort: 9999
       protocol: TCP
       name: http
   selector:
     {{- include "free5gc-nrf.selectorLabels" $ | nindent 4 }}
-    project: {{ $.Values.global.projectName }}
-    nf: {{ .name }}
-{{- end }}
+    container:  {{ $.Values.sidecar.name }}
 
+{{- end }}

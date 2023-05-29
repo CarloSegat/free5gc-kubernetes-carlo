@@ -23,7 +23,7 @@ global:
     service:
       name: nrf-nnrf
       type: ClusterIP
-      port: "8000"
+      port: 9999
       nodePort: "30800"
   sbi:
     scheme: http
