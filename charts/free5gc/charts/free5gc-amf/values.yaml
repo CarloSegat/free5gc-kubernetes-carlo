@@ -73,9 +73,6 @@ amf:
   image:
     name: haidinhtuan/free5gc-amf
     pullPolicy: Always
-  sidecar:
-    image: haidinhtuan/sidecar
-    tag: latest
   service:
     type: ClusterIP
     port: 80
