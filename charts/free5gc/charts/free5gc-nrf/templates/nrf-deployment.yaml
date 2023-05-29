@@ -54,6 +54,10 @@ spec:
           {{- end }}
         command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the MongoDB; sleep 2; done;"]
       containers:
+      - name: sidecar
+        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
+        ports:
+        - containerPort: 9999
       - name: {{ .name }}
         image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
         imagePullPolicy: {{ .image.pullPolicy }}
@@ -91,10 +95,6 @@ spec:
           httpGet:
             scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
             port: 80
-      - name: sidecar
-        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
-        ports:
-        - containerPort: 9999
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
