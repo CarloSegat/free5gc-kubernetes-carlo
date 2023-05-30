@@ -23,6 +23,10 @@ spec:
   {{- if not .autoscaling.enabled }}
   replicas: {{ .replicaCount }}
   {{- end }}
+  hostAliases:
+  - ip: "127.0.0.1"
+    hostnames:
+    - "haidinhtuan.com"
   selector:
     matchLabels:
       {{- include "free5gc-amf.selectorLabels" $ | nindent 6 }}

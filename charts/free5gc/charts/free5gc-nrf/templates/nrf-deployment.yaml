@@ -63,7 +63,7 @@ spec:
         args:
           - "-c"
           - |
-            echo '127.0.0.1 amf.snt.tuberlin ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin' >> /etc/hosts
+            echo '127.0.0.1 amf.snet.tuberlin ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin' >> /etc/hosts
         ports:
         - containerPort: 80
         command: ["./nrf"]
