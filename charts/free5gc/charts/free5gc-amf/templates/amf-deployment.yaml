@@ -54,6 +54,10 @@ spec:
       - name: wait-nrf
         {{- with $.Values.initcontainers.curl }}
         image: {{ .registry }}/{{ .image }}:{{ .tag }}
+        hostAliases:
+        - ip: "127.0.0.1"
+          hostnames:
+          - "haidinhtuan.com"
         {{- end }}
         env:
         - name: DEPENDENCIES
