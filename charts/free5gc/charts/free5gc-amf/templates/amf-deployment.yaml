@@ -92,10 +92,6 @@ spec:
           name: {{ include "free5gc-amf.fullname" $ }}-volume
         resources:
             {{- toYaml .resources | nindent 12 }}
-        hostAliases:
-        - ip: "127.0.0.1"
-          hostnames:
-          - "haidinhtuan.com"
       - name: sidecar
         image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
         ports:
