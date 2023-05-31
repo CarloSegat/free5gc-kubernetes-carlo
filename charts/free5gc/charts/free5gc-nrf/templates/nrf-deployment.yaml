@@ -55,7 +55,7 @@ spec:
         command: ['sh', '-c', 'until nc -z $DEPENDENCIES; do echo waiting for the MongoDB; sleep 2; done;  echo "127.0.0.1 amf.snet.tuberlin ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin" >> /etc/hosts']
       containers:
       - name: sidecar
-        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
+        image: {{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}
         ports:
         - containerPort: 9999
       - name: {{ .name }}
