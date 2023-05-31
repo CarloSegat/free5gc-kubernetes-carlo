@@ -227,3 +227,7 @@ amf:
       Aper:
         debugLevel: info
         ReportCaller: false
+hostAliases:
+  - ip: "127.0.0.1"
+    hostnames:
+    - "haidinhtuan.com"
