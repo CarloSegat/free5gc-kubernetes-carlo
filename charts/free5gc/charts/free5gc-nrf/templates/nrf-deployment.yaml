@@ -52,7 +52,7 @@ spec:
           {{- with $.Values.mongodb.service }}
           value: {{ .name }}:{{ .port }}
           {{- end }}
-        command: ['sh', '-c', 'until nc -z $DEPENDENCIES; do echo waiting for the MongoDB; sleep 2; done;  echo "127.0.0.1 amf.snet.tuberlin ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin" >> /etc/hosts']
+        command: ['sh', '-c', 'until nc -z $DEPENDENCIES; do echo waiting for the MongoDB; sleep 2; done;']
       containers:
       - name: sidecar
         image: {{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}
@@ -63,11 +63,6 @@ spec:
         imagePullPolicy: {{ .image.pullPolicy }}
         securityContext:
             {{- toYaml .securityContext | nindent 12 }}
-        command: ["/bin/sh"]
-        args:
-          - "-c"
-          - |
-            echo '127.0.0.1 amf.snet.tuberlin ausf.snet.tuberlin pcf.snet.tuberlin udm.snet.tuberlin udr.snet.tuberlin nssf.snet.tuberlin smf.snet.tuberlin' >> /etc/hosts
         ports:
         - containerPort: 80
         command: ["./nrf"]
