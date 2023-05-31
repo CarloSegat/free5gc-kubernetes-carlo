@@ -5,16 +5,16 @@ metadata:
   name: {{ include "free5gc-nrf.fullname" $ }}-sidecar-service
   labels:
     {{- include "free5gc-nrf.labels" $ | nindent 4 }}
-    container:  {{ $.Values.sidecar.name }}
+    container:  {{ include "free5gc-nrf.fullname" $ }}-sidecar-service
 spec:
   type: {{ $.Values.sidecar.service.type }}
   ports:
-    - port: {{ $.Values.sidecar.service.port }}
+    - port: 9999
       targetPort: 9999
       protocol: TCP
       name: http
   selector:
     {{- include "free5gc-nrf.selectorLabels" $ | nindent 4 }}
-    container:  {{ $.Values.sidecar.name }}
+    container:  {{ include "free5gc-nrf.fullname" $ }}-sidecar-service
 
 {{- end }}
