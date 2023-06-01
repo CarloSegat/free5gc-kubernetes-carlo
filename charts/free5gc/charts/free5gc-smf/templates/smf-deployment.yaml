@@ -50,6 +50,8 @@ spec:
         {{- toYaml .imagePullSecrets | nindent 8 }}
       securityContext:
         {{- toYaml .podSecurityContext | nindent 8 }}
+      hostAliases: 
+        {{- toYaml $.Values.hostAliases | nindent 8 }}
       initContainers:
       - name: wait-nrf
         {{- with $.Values.initcontainers.curl }}
@@ -84,6 +86,10 @@ spec:
           name: {{ include "free5gc-smf.fullname" $ }}-volume
         resources:
             {{- toYaml .resources | nindent 12 }}
+      - name: sidecar
+        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
+        ports:
+        - containerPort: 9999
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:

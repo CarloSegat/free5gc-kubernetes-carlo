@@ -1,10 +1,10 @@
-{{- with .Values.ausf }}
+{{- with .Values.nssf }}
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "free5gc-ausf.fullname" $ }}-sidecar-service
+  name: {{ include "free5gc-nssf.fullname" $ }}-sidecar-service
   labels:
-    {{- include "free5gc-ausf.labels" $ | nindent 4 }}
+    {{- include "free5gc-nssf.labels" $ | nindent 4 }}
     project: {{ $.Values.global.projectName }}
     nf: {{ .name }}
 spec:
@@ -15,9 +15,8 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "free5gc-ausf.selectorLabels" $ | nindent 4 }}
+    {{- include "free5gc-nssf.selectorLabels" $ | nindent 4 }}
     project: {{ $.Values.global.projectName }}
     nf: {{ .name }}
 
 {{- end }}
-

@@ -26,9 +26,9 @@ data:
     configuration:
       sbi:
         scheme: {{ $.Values.global.sbi.scheme }}
-        registerIPv4: {{ include "free5gc-udr.fullname" $ }}-service # IP used to register to NRF
+        registerIPv4: "udr.snet.tuberlin" # IP used to register to NRF
         bindingIPv4: 0.0.0.0  # IP used to bind the service
-        port: {{ .service.port }}
+        port: 80
         tls:
           key: config/TLS/udr.key
           pem: config/TLS/udr.pem
@@ -37,7 +37,7 @@ data:
         name: free5gc
         url: mongodb://{{ $.Values.mongodb.service.name }}:{{ $.Values.mongodb.service.port }}
 
-      nrfUri: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
+      nrfUri: "http://localhost:9999"
 
     logger:
       {{- toYaml .configuration.logger | nindent 6 }}

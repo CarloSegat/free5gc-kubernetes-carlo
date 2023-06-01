@@ -29,9 +29,9 @@ data:
 
       sbi:
         scheme: {{ $.Values.global.sbi.scheme }}
-        registerIPv4: {{ include "free5gc-pcf.fullname" $ }}-service # IP used to register to NRF
+        registerIPv4: "pcf.snet.tuberlin" # IP used to register to NRF
         bindingIPv4: 0.0.0.0  # IP used to bind the service
-        port: {{ .service.port }}
+        port: 80
         tls:
           key: config/TLS/pcf.key
           pem: config/TLS/pcf.pem
@@ -40,7 +40,7 @@ data:
         name: free5gc                  # name of the mongodb
         url: mongodb://{{ $.Values.mongodb.service.name }}:{{ $.Values.mongodb.service.port }} # a valid URL of the mongodb
 
-      nrfUri: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
+      nrfUri: "http://localhost:9999"
 
       {{- .configuration.configuration | nindent 6 }}
 

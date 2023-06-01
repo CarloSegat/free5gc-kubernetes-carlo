@@ -319,3 +319,13 @@ nssf:
       NSSF:
         debugLevel: info
         ReportCaller: false
+hostAliases:
+  - ip: "127.0.0.1"
+    hostnames:
+    - "ausf.snet.tuberlin"
+    - "amf.snet.tuberlin"
+    - "pcf.snet.tuberlin"
+    - "smf.snet.tuberlin"
+    - "udm.snet.tuberlin"
+    - "udr.snet.tuberlin"
+    - "upf.snet.tuberlin"

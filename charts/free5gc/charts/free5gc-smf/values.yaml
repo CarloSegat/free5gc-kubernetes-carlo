@@ -24,7 +24,7 @@ global:
     service:
       name: nrf-nnrf
       type: ClusterIP
-      port: "8000"
+      port: 80
       nodePort: "30800"
   sbi:
     scheme: http
@@ -51,6 +51,14 @@ initcontainers:
     tag: "1.32.0"
 
 isPfcpNeeded: true
+
+sidecar:
+  name: sidecar
+  image: haidinhtuan/sidecar
+  tag: latest
+  service:
+    type: ClusterIP
+    port: 9999
 
 smf:
   name: smf
@@ -218,3 +226,13 @@ smf:
       PFCP:
         debugLevel: info
         ReportCaller: false
+hostAliases:
+  - ip: "127.0.0.1"
+    hostnames:
+    - "ausf.snet.tuberlin"
+    - "nssf.snet.tuberlin"
+    - "pcf.snet.tuberlin"
+    - "amf.snet.tuberlin"
+    - "udm.snet.tuberlin"
+    - "udr.snet.tuberlin"
+    - "upf.snet.tuberlin"
