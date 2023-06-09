@@ -1,0 +1,40 @@
+#
+# Software Name : free5gc-kubernetes
+# SPDX-FileCopyrightText: Copyright (c) 2021 Orange
+# SPDX-License-Identifier: Apache-2.0
+#
+# This software is distributed under the Apache License 2.0,
+# the text of which is available at https://github.com/Orange-OpenSource/free5gc-kubernetes/blob/main/LICENSE
+# or see the "LICENSE" file for more details.
+#
+# Author: Abderaouf KHICHANE, Ilhem FAJJARI, Ayoub BOUSSELMI
+# Software description: An open-source project providing Helm charts to deploy 5G components (Core + RAN) on top of Kubernetes
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: free5gc-core-free5gc-ssim-depoyment
+  labels:  # Add this labels field
+    app: free5gc-core-free5gc-ssim
+spec:
+  selector:
+    matchLabels:
+      app: free5gc-core-free5gc-ssim
+  template:
+    metadata:
+      labels:  # Add this labels field
+        app: free5gc-core-free5gc-ssim
+    spec:
+      containers:
+      - name: ssim
+        image: haidinhtuan/ssim
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9999
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+
+      volumes:
+      - name: free5gc-core-free5gc-ssim-volume
+        projected:
+          sources:
