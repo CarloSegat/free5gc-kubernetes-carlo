@@ -13,7 +13,7 @@
 apiVersion: v2
 name: ssim
 description: A Helm chart to deploy SSI-M
-version: 2.0.17
+version: 2.23.9
 appVersion: latest
 maintainers:
   - email: haidinhtuan@gmail.com
