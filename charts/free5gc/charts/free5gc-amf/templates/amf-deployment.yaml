@@ -91,6 +91,11 @@ spec:
         image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
         ports:
         - containerPort: 9999
+        env:
+        - name: NF_TYPE
+          value: "{{ $.Values.sidecar.env.NF_TYPE }}"
+        - name: 
+          value: "{{ $.Values.global.env.ISSUER_DID }}"
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:

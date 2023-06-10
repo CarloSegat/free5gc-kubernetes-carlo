@@ -18,4 +18,6 @@ global:
 
 
 projectName: ssim
+env:
+  NF_TYPE: AMF
 
