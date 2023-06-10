@@ -13,7 +13,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: free5gc-core-free5gc-ssim-depoyment
+  name: free5gc-core-free5gc-ssim-ssim
   labels:  # Add this labels field
     app: free5gc-core-free5gc-ssim
 spec:
