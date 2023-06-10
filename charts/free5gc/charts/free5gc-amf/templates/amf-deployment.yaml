@@ -94,7 +94,7 @@ spec:
         env:
         - name: NF_TYPE
           value: "{{ $.Values.sidecar.env.NF_TYPE }}"
-        - name: 
+        - name: ISSUER_DID
           value: "{{ $.Values.global.env.ISSUER_DID }}"
       dnsPolicy: ClusterFirst
       restartPolicy: Always
