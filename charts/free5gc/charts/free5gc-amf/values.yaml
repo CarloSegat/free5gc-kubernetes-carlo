@@ -19,7 +19,8 @@ fullnameOverride: ""
 
 global:
   projectName: free5gc
-  
+  env:
+    NF_TYPE: AMF  
   nrf:
     service:
       name: nrf-nnrf
@@ -62,7 +63,7 @@ isNgapNeeded: true
 
 sidecar:
   name: sidecar
-  image: haidinhtuan/sidecar
+  image: haidinhtuan/controller
   tag: latest
   service:
     type: ClusterIP

@@ -16,6 +16,10 @@
 
 global:
   name: free5gc
+  env:
+    ISSUER_DID: AMF
+    SCHEMA_ID:
+    CRED_DEF_ID:
   userPlaneArchitecture: single  # possible values are "single" and "ulcl"
   nrf:
     service:
