@@ -16,6 +16,8 @@ metadata:
   name: free5gc-core-free5gc-ssim-service
 spec:
   type: ClusterIP
+  selector:
+    app: free5gc-core-free5gc-ssim 
   ports:
     - name: http
       port: 9999
