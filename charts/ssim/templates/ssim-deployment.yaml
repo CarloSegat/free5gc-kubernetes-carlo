@@ -33,8 +33,3 @@ spec:
         - containerPort: 9999
       dnsPolicy: ClusterFirst
       restartPolicy: Always
-
-      volumes:
-      - name: free5gc-core-free5gc-ssim-volume
-        projected:
-          sources:
