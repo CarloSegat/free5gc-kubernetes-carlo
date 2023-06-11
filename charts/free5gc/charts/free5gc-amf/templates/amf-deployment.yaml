@@ -65,7 +65,7 @@ spec:
       - name: init-db
         image: postgres:14.1-alpine
         command: ['sh', '-c', '
-          until psql -h postgres -U postgres -c "
+          until psql -h localhost -U postgres -c "
             CREATE DATABASE channels;
             GRANT ALL PRIVILEGES ON DATABASE channels TO postgres;
             \c channels;
