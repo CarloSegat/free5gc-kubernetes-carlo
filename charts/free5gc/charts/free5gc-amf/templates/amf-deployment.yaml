@@ -62,40 +62,6 @@ spec:
           value: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
         command: ['sh', '-c', 'set -x; for dependency in $DEPENDENCIES; do while [ $(curl --insecure --connect-timeout 1 -s -o /dev/null -w "%{http_code}" $dependency) -ne 200 ]; do echo waiting for dependencies; sleep 1; done; sleep 15; done;']
       containers:
-      - name: {{ .name }}
-        image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
-        imagePullPolicy: {{ .image.pullPolicy }}
-        securityContext:
-            {{- toYaml .securityContext | nindent 12 }}
-        ports:
-        - containerPort: {{ .service.port }}
-        ports:
-        - name: namf
-          containerPort: {{ .service.port }}
-        {{- if $.Values.isNgapNeeded }}
-        - name: n2
-          containerPort: {{ $.Values.global.amf.service.ngap.port }}
-          protocol: {{ $.Values.global.amf.service.ngap.protocol }}
-        {{- end }}
-        command: ["./amf"]
-        args: ["-c", "../config/amfcfg.yaml"]
-        env:
-          - name: GIN_MODE
-            value: release
-        volumeMounts:
-        - mountPath: {{ .volume.mount }}
-          name: {{ include "free5gc-amf.fullname" $ }}-volume
-        resources:
-            {{- toYaml .resources | nindent 12 }}
-      - name: controller
-        image: "{{ $.Values.controller.image }}:{{ $.Values.controller.tag }}"
-        ports:
-        - containerPort: 9999
-        env:
-        - name: NF_TYPE
-          value: "{{ $.Values.controller.env.NF_TYPE }}"
-        - name: ISSUER_DID
-          value: "{{ $.Values.global.env.ISSUER_DID }}"
       - name: database
         image: {{ $.Values.database.image }}
         ports:
@@ -105,7 +71,23 @@ spec:
           value: {{ $.Values.database.env.POSTGRES_PASSWORD }}
         volumeMounts:
           - mountPath: /var/lib/postgresql/{{ $.Values.controller.env.NF_TYPE }}/data
-            name: {{ $.Values.controller.env.NF_TYPE }}-data
+            name: {{ $.Values.controller.env.NF_TYPE }}-data     
+        readinessProbe:
+          exec:
+            command:
+              - sh
+              - -c
+              - exec pg_isready -U postgres -h localhost
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        livenessProbe:
+          exec:
+            command:
+              - sh
+              - -c
+              - exec pg_isready -U postgres -h localhost
+          initialDelaySeconds: 15
+          periodSeconds: 15 
       - name: acapy
         image: {{ $.Values.acapy.image }}
         env:
@@ -159,6 +141,41 @@ spec:
               --log-level INFO
         ports:
           - containerPort: 5555
+      - name: {{ .name }}
+        image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
+        imagePullPolicy: {{ .image.pullPolicy }}
+        securityContext:
+            {{- toYaml .securityContext | nindent 12 }}
+        ports:
+        - containerPort: {{ .service.port }}
+        ports:
+        - name: namf
+          containerPort: {{ .service.port }}
+        {{- if $.Values.isNgapNeeded }}
+        - name: n2
+          containerPort: {{ $.Values.global.amf.service.ngap.port }}
+          protocol: {{ $.Values.global.amf.service.ngap.protocol }}
+        {{- end }}
+        command: ["./amf"]
+        args: ["-c", "../config/amfcfg.yaml"]
+        env:
+          - name: GIN_MODE
+            value: release
+        volumeMounts:
+        - mountPath: {{ .volume.mount }}
+          name: {{ include "free5gc-amf.fullname" $ }}-volume
+        resources:
+            {{- toYaml .resources | nindent 12 }}
+      - name: controller
+        image: "{{ $.Values.controller.image }}:{{ $.Values.controller.tag }}"
+        ports:
+        - containerPort: 9999
+        env:
+        - name: NF_TYPE
+          value: "{{ $.Values.controller.env.NF_TYPE }}"
+        - name: ISSUER_DID
+          value: "{{ $.Values.global.env.ISSUER_DID }}"
+
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
