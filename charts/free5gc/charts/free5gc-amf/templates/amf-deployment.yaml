@@ -180,7 +180,11 @@ spec:
         - name: NF_TYPE
           value: "{{ $.Values.controller.env.NF_TYPE }}"
         - name: ISSUER_DID
-          value: "{{ $.Values.global.env.ISSUER_DID }}"
+          value: "{{ $.Values.controller.env.ISSUER_DID }}"
+        - name: SCHEMA_ID
+          value: "{{ $.Values.controller.env.SCHEMA_ID }}"
+        - name: CRED_DEF_ID
+          value: "{{ $.Values.controller.env.CRED_DEF_ID }}"
 
       dnsPolicy: ClusterFirst
       restartPolicy: Always

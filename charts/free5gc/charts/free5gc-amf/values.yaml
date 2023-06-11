@@ -70,6 +70,9 @@ controller:
     port: 9999
   env:
     NF_TYPE: amf
+    ISSUER_DID: "J2168i1E7NNH3T1ZAtowHx"
+    SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:1.0"
+    CRED_DEF_ID: "J2168i1E7NNH3T1ZAtowHx:3:CL:14431:default"
 
 database:
   name: database
@@ -81,19 +84,16 @@ acapy:
   name: acapy
   image: bcgovimages/aries-cloudagent:py36-1.16-1_0.8.1
   env:
-      ACAPY_ADMIN_INSECURE_MODE: "true"
-      ACAPY_AUTO_PROVISION: "true"
-      ACAPY_DEBUG_CONNECTIONS: "true"
-      ACAPY_ENDPOINT: "http://AMF-agent:7100"
-      ACAPY_LABEL: "AMF"
-      ACAPY_LOG_LEVEL: "info"
-      ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
-      ADMIN_PORT: "8888"
-      AGENT_PORT: "5555"
-      SEED: "01234567890123456789012345678amf"
-      ISSUER_DID: "J2168i1E7NNH3T1ZAtowHx"
-      SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:1.0"
-      CRED_DEF_ID: "J2168i1E7NNH3T1ZAtowHx:3:CL:14431:default"
+    ACAPY_ADMIN_INSECURE_MODE: "true"
+    ACAPY_AUTO_PROVISION: "true"
+    ACAPY_DEBUG_CONNECTIONS: "true"
+    ACAPY_ENDPOINT: "http://free5gc-core-free5gc-amf-acapy-service:5555"
+    ACAPY_LABEL: "AMF"
+    ACAPY_LOG_LEVEL: "info"
+    ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
+    ADMIN_PORT: "7777"
+    AGENT_PORT: "5555"
+    SEED: "01234567890123456789012345678amf"
   service: 
     type: ClusterIP
     port: 5555
