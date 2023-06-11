@@ -32,7 +32,7 @@ acapy:
       ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
       ADMIN_PORT: "8888"
       AGENT_PORT: "5555"
-      SEED: "0123456789012345678901234567ssim"
+      SEED: "01234567890123456789012345678amf"
   service: 
     type: ClusterIP
     port: 5555
