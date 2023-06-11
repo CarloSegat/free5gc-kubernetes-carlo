@@ -10,7 +10,7 @@
 # Author: Abderaouf KHICHANE, Ilhem FAJJARI, Ayoub BOUSSELMI
 # Software description: An open-source project providing Helm charts to deploy 5G components (Core + RAN) on top of Kubernetes
 #
-# Default values for ueransim-chart.
+# Default values for ssim-chart.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
