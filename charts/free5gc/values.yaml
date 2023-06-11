@@ -93,15 +93,15 @@ global:
 # These parameters can be used to enable/disable deployment of subcharts
 deployMongoDb: true
 deployAmf: true
-deployAusf: true
+deployAusf: false
 deployN3iwf: false
 deployNrf: true
-deployNssf: true
-deployPcf: true
-deploySmf: true
-deployUdm: true
-deployUdr: true
-deployUpf: true
+deployNssf: false
+deployPcf: false
+deploySmf: false
+deployUdm: false
+deployUdr: false
+deployUpf: false
 deployWebui: true
 deployDbPython: true
 
