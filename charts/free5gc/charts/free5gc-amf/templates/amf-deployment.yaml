@@ -109,6 +109,12 @@ spec:
           value: "{{ $.Values.acapy.env.ADMIN_PORT }}"
         - name: AGENT_PORT
           value: "{{ $.Values.acapy.env.AGENT_PORT }}"
+        - name: ISSUER_DID
+          value: "{{ $.Values.acapy.env.ISSUER_DID }}"
+        - name: SCHEMA_ID
+          value: "{{ $.Values.acapy.env.SCHEMA_ID }}"
+        - name: CRED_DEF_ID
+          value: "{{ $.Values.acapy.env.CRED_DEF_ID }}"
         command:
           - "/bin/bash"
           - "-c"
