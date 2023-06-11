@@ -30,6 +30,6 @@ spec:
         image: haidinhtuan/ssim
         imagePullPolicy: Always
         ports:
-        - containerPort: 9999
+        - containerPort: 5555
       dnsPolicy: ClusterFirst
       restartPolicy: Always

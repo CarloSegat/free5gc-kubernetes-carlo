@@ -18,6 +18,21 @@ global:
 
 
 projectName: ssim
-env:
-  NF_TYPE: AMF
 
+acapy:
+  name: acapy
+  image: bcgovimages/aries-cloudagent:py36-1.16-1_0.8.1
+  env:
+      ACAPY_ADMIN_INSECURE_MODE: "true"
+      ACAPY_AUTO_PROVISION: "true"
+      ACAPY_DEBUG_CONNECTIONS: "true"
+      ACAPY_ENDPOINT: "http://free5gc-core-free5gc-ssim-service:5555"
+      ACAPY_LABEL: "SSIM"
+      ACAPY_LOG_LEVEL: "info"
+      ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
+      ADMIN_PORT: "8888"
+      AGENT_PORT: "5555"
+      SEED: "0123456789012345678901234567ssim"
+  service: 
+    type: ClusterIP
+    port: 5555
