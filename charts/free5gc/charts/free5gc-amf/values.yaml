@@ -61,15 +61,37 @@ initcontainers:
 
 isNgapNeeded: true
 
-sidecar:
-  name: sidecar
+controller:
+  name: controller
   image: haidinhtuan/controller
   tag: latest
   service:
     type: ClusterIP
     port: 9999
   env:
-    NF_TYPE: AMF
+    NF_TYPE: amf
+
+database:
+  name: database
+  image: haidinhtuan/nf-db
+
+acapy:
+  name: acapy
+  image: bcgovimages/aries-cloudagent:py36-1.16-1_0.8.1
+  env:
+      ACAPY_ADMIN_INSECURE_MODE: "true"
+      ACAPY_AUTO_PROVISION: "true"
+      ACAPY_DEBUG_CONNECTIONS: "true"
+      ACAPY_ENDPOINT: "http://AMF-agent:7100"
+      ACAPY_LABEL: "AMF"
+      ACAPY_LOG_LEVEL: "info"
+      ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
+      ADMIN_PORT: "7101"
+      AGENT_PORT: "7100"
+      SEED: "01234567890123456789012345678amf"
+  service: 
+    type: ClusterIP
+    port: 5555
 
 amf:
   name: amf

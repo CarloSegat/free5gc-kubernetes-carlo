@@ -61,6 +61,24 @@ spec:
         - name: DEPENDENCIES
           value: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
         command: ['sh', '-c', 'set -x; for dependency in $DEPENDENCIES; do while [ $(curl --insecure --connect-timeout 1 -s -o /dev/null -w "%{http_code}" $dependency) -ne 200 ]; do echo waiting for dependencies; sleep 1; done; sleep 15; done;']
+      initContainers:
+      - name: init-db
+        image: postgres:14.1-alpine
+        command: ['sh', '-c', '
+          psql -h localhost -U postgres -c "
+            CREATE DATABASE channels;
+            GRANT ALL PRIVILEGES ON DATABASE channels TO postgres;
+            \c channels;
+            CREATE TABLE channels (
+              id serial PRIMARY KEY,
+              public_did VARCHAR (50) NOT NULL,
+              nf_type VARCHAR(50) NOT NULL,
+              connection_id VARCHAR(50) NOT NULL,
+              authenticated BOOLEAN NOT NULL,
+              authorization_consumer BOOLEAN NOT NULL,
+              authorization_producer BOOLEAN NOT NULL
+            );
+          "']
       containers:
       - name: {{ .name }}
         image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
@@ -87,15 +105,75 @@ spec:
           name: {{ include "free5gc-amf.fullname" $ }}-volume
         resources:
             {{- toYaml .resources | nindent 12 }}
-      - name: sidecar
-        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
+      - name: controller
+        image: "{{ $.Values.controller.image }}:{{ $.Values.controller.tag }}"
         ports:
         - containerPort: 9999
         env:
         - name: NF_TYPE
-          value: "{{ $.Values.sidecar.env.NF_TYPE }}"
+          value: "{{ $.Values.controller.env.NF_TYPE }}"
         - name: ISSUER_DID
           value: "{{ $.Values.global.env.ISSUER_DID }}"
+      - name: database
+        image: {{ $.Values.database.image }}
+        ports:
+          - containerPort: 5432
+        volumeMounts:
+          - mountPath: /var/lib/postgresql/{{ $.Values.controller.env.NF_TYPE }}/data
+            name: data
+      - name: acapy
+        image: {{ $.Values.acapy.image }}
+        env:
+        - name: ACAPY_ADMIN_INSECURE_MODE
+          value: "{{ $.Values.acapy.env.ACAPY_ADMIN_INSECURE_MODE }}"
+        - name: ACAPY_AUTO_PROVISION
+          value: "{{ $.Values.acapy.env.ACAPY_AUTO_PROVISION }}"
+        - name: ACAPY_DEBUG_CONNECTIONS
+          value: "{{ $.Values.acapy.env.ACAPY_DEBUG_CONNECTIONS }}"
+        - name: ACAPY_ENDPOINT
+          value: "{{ $.Values.acapy.env.ACAPY_ENDPOINT }}"
+        - name: ACAPY_LABEL
+          value: "{{ $.Values.acapy.env.ACAPY_LABEL }}"
+        - name: ACAPY_LOG_LEVEL
+          value: "{{ $.Values.acapy.env.ACAPY_LOG_LEVEL }}"
+        - name: ACAPY_GENESIS_URL
+          value: "{{ $.Values.acapy.env.ACAPY_GENESIS_URL }}"
+        - name: ADMIN_PORT
+          value: "{{ $.Values.acapy.env.ADMIN_PORT }}"
+        - name: AGENT_PORT
+          value: "{{ $.Values.acapy.env.AGENT_PORT }}"
+        command:
+          - "/bin/bash"
+          - "-c"
+          - >
+            aca-py start \
+              --admin '0.0.0.0' {{ $.Values.acapy.env.ADMIN_PORT }} \
+              --inbound-transport http '0.0.0.0' {{ $.Values.acapy.env.AGENT_PORT }} \
+              --webhook-url 'localhost:8888/webhooks' \
+              --outbound-transport http \
+              --wallet-type askar \
+              --wallet-name tub-wallet \
+              --wallet-key tub-key \
+              --preserve-exchange-records \
+              --auto-provision \
+              --public-invites \
+              --auto-accept-invites \
+              --seed {{ $.Values.acapy.env.SEED }} \
+              --auto-accept-requests \
+              --auto-ping-connection \
+              --auto-respond-credential-proposal \
+              --auto-respond-credential-offer \
+              --auto-respond-credential-request \
+              --auto-respond-presentation-proposal \
+              --auto-respond-presentation-request \
+              --auto-store-credential \
+              --auto-verify-presentation \
+              --preserve-exchange-records \
+              --invite-public \
+              --requests-through-public-did \
+              --log-level INFO
+        ports:
+          - containerPort: 5555
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
