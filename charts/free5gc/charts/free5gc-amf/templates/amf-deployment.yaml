@@ -195,7 +195,7 @@ spec:
           - configMap:
               name: {{ include "free5gc-amf.fullname" $ }}-configmap
             volumes:
-      - name: {{ $.Values.controller.env.NF_TYPE }}-data-volume
+      - name: {{ $.Values.controller.env.NF_TYPE }}-data
         persistentVolumeClaim:
           claimName: {{ $.Values.controller.env.NF_TYPE }}-data
 {{- end }}
