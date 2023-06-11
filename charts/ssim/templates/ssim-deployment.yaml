@@ -26,10 +26,60 @@ spec:
         app: free5gc-core-free5gc-ssim
     spec:
       containers:
-      - name: ssim
-        image: haidinhtuan/ssim
-        imagePullPolicy: Always
+      - name: acapy
+        image: {{ $.Values.acapy.image }}
+        env:
+        - name: ACAPY_ADMIN_INSECURE_MODE
+          value: "{{ $.Values.acapy.env.ACAPY_ADMIN_INSECURE_MODE }}"
+        - name: ACAPY_AUTO_PROVISION
+          value: "{{ $.Values.acapy.env.ACAPY_AUTO_PROVISION }}"
+        - name: ACAPY_DEBUG_CONNECTIONS
+          value: "{{ $.Values.acapy.env.ACAPY_DEBUG_CONNECTIONS }}"
+        - name: ACAPY_ENDPOINT
+          value: "{{ $.Values.acapy.env.ACAPY_ENDPOINT }}"
+        - name: ACAPY_LABEL
+          value: "{{ $.Values.acapy.env.ACAPY_LABEL }}"
+        - name: ACAPY_LOG_LEVEL
+          value: "{{ $.Values.acapy.env.ACAPY_LOG_LEVEL }}"
+        - name: ACAPY_GENESIS_URL
+          value: "{{ $.Values.acapy.env.ACAPY_GENESIS_URL }}"
+        - name: ADMIN_PORT
+          value: "{{ $.Values.acapy.env.ADMIN_PORT }}"
+        - name: AGENT_PORT
+          value: "{{ $.Values.acapy.env.AGENT_PORT }}"
+        - name: SEED
+          value: "{{ $.Values.acapy.env.SEED }}"
+        command:
+          - "/bin/bash"
+          - "-c"
+          - >
+            aca-py start \
+              --admin '0.0.0.0' "{{ $.Values.acapy.env.ADMIN_PORT }}" \
+              --inbound-transport http '0.0.0.0' "{{ $.Values.acapy.env.AGENT_PORT }}" \
+              --webhook-url 'localhost:8888/webhooks' \
+              --outbound-transport http \
+              --wallet-type askar \
+              --wallet-name tub-wallet \
+              --wallet-key tub-key \
+              --preserve-exchange-records \
+              --auto-provision \
+              --public-invites \
+              --auto-accept-invites \
+              --seed {{ $.Values.acapy.env.SEED }} \
+              --auto-accept-requests \
+              --auto-ping-connection \
+              --auto-respond-credential-proposal \
+              --auto-respond-credential-offer \
+              --auto-respond-credential-request \
+              --auto-respond-presentation-proposal \
+              --auto-respond-presentation-request \
+              --auto-store-credential \
+              --auto-verify-presentation \
+              --preserve-exchange-records \
+              --invite-public \
+              --requests-through-public-did \
+              --log-level INFO
         ports:
-        - containerPort: 5555
+          - containerPort: 5555
       dnsPolicy: ClusterFirst
       restartPolicy: Always
