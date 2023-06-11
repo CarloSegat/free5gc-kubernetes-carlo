@@ -91,6 +91,9 @@ acapy:
       ADMIN_PORT: "8888"
       AGENT_PORT: "5555"
       SEED: "01234567890123456789012345678amf"
+      ISSUER_DID: "J2168i1E7NNH3T1ZAtowHx"
+      SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:1.0"
+      CRED_DEF_ID: "J2168i1E7NNH3T1ZAtowHx:3:CL:14431:default"
   service: 
     type: ClusterIP
     port: 5555
