@@ -15,6 +15,7 @@ name: ssim
 description: A Helm chart to deploy SSI-M
 version: 2.23.9
 appVersion: latest
+icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
 maintainers:
   - email: haidinhtuan@gmail.com
     name: Hai Dinh-Tuan
