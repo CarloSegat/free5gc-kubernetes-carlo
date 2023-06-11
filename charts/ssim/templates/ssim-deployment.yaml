@@ -81,5 +81,6 @@ spec:
               --log-level INFO
         ports:
           - containerPort: 5555
+          - containerPort: 7777
       dnsPolicy: ClusterFirst
       restartPolicy: Always

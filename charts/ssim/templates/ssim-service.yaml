@@ -19,6 +19,9 @@ spec:
   selector:
     app: free5gc-core-free5gc-ssim 
   ports:
-    - name: http
+    - name: inbound
       port: 5555
       targetPort: 5555
+    - name: admin
+      port: 7777
+      targetPort: 7777
