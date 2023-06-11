@@ -65,7 +65,7 @@ spec:
       - name: init-db
         image: postgres:14.1-alpine
         command: ['sh', '-c', '
-          psql -h localhost -U postgres -c "
+          until psql -h postgres -U postgres -c "
             CREATE DATABASE channels;
             GRANT ALL PRIVILEGES ON DATABASE channels TO postgres;
             \c channels;
@@ -78,7 +78,11 @@ spec:
               authorization_consumer BOOLEAN NOT NULL,
               authorization_producer BOOLEAN NOT NULL
             );
-          "']
+          "; do
+            echo "Waiting for PostgreSQL to start...";
+            sleep 1;
+          done
+        ']
       containers:
       - name: {{ .name }}
         image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
