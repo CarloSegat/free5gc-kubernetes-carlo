@@ -122,7 +122,7 @@ spec:
             aca-py start \
               --admin '0.0.0.0' {{ $.Values.acapy.env.ADMIN_PORT }} \
               --inbound-transport http '0.0.0.0' {{ $.Values.acapy.env.AGENT_PORT }} \
-              --webhook-url 'http://localhost:8888/webhooks' \
+              --webhook-url 'http://localhost:9999/webhooks' \
               --outbound-transport http \
               --wallet-type askar \
               --wallet-name tub-wallet \
