@@ -100,7 +100,6 @@ spec:
         image: {{ $.Values.database.image }}
         ports:
           - containerPort: 5432
-        command: ["psql", "-U", "postgres", "-f", "{{ $.Files.Get "initdb.sql" }}"]
         env:
         - name: POSTGRES_PASSWORD
           value: {{ $.Values.database.env.POSTGRES_PASSWORD }}
