@@ -30,7 +30,7 @@ acapy:
       ACAPY_LABEL: "SSIM"
       ACAPY_LOG_LEVEL: "info"
       ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
-      ADMIN_PORT: "8888"
+      ADMIN_PORT: "7777"
       AGENT_PORT: "5555"
       SEED: "0123456789012345678901234567ssim"
   service: 
