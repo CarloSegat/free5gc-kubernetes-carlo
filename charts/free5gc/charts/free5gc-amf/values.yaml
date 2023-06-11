@@ -74,6 +74,8 @@ controller:
 database:
   name: database
   image: haidinhtuan/nf-db
+  env:
+    POSTGRES_PASSWORD: "postgres"
 
 acapy:
   name: acapy
@@ -86,8 +88,8 @@ acapy:
       ACAPY_LABEL: "AMF"
       ACAPY_LOG_LEVEL: "info"
       ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
-      ADMIN_PORT: "7101"
-      AGENT_PORT: "7100"
+      ADMIN_PORT: "8888"
+      AGENT_PORT: "5555"
       SEED: "01234567890123456789012345678amf"
   service: 
     type: ClusterIP
