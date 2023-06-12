@@ -139,6 +139,43 @@ spec:
               --log-level INFO
         ports:
           - containerPort: 5555
+      - name: {{ .name }}
+        image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
+        imagePullPolicy: {{ .image.pullPolicy }}
+        securityContext:
+            {{- toYaml .securityContext | nindent 12 }}
+        ports:
+        - containerPort: 80
+        command: ["./nrf"]
+        args: ["-c", "../config/nrfcfg.yaml"]
+        env:
+          - name: DB_URI
+            value: mongodb://{{ $.Values.mongodb.service.name }}/free5gc
+          - name: GIN_MODE
+            value: release
+        volumeMounts:
+        - mountPath: {{ .volume.mount }}
+          name: {{ include "free5gc-nrf.fullname" $ }}-volume
+        resources:
+            {{- toYaml .resources | nindent 12 }}
+        readinessProbe:
+          initialDelaySeconds: {{ .readinessProbe.initialDelaySeconds }}
+          periodSeconds: {{ .readinessProbe.periodSeconds }}
+          timeoutSeconds: {{ .readinessProbe.timeoutSeconds }}
+          failureThreshold:  {{ .readinessProbe.failureThreshold }}
+          successThreshold: {{ .readinessProbe.successThreshold }}
+          httpGet:
+            scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
+            port: 80
+        livenessProbe:
+          initialDelaySeconds: {{ .livenessProbe.initialDelaySeconds }}
+          periodSeconds: {{ .livenessProbe.periodSeconds }}
+          timeoutSeconds: {{ .livenessProbe.timeoutSeconds }}
+          failureThreshold: {{ .livenessProbe.failureThreshold }}
+          successThreshold: {{ .livenessProbe.successThreshold }}
+          httpGet:
+            scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
+            port: 80
       - name: controller
         image: "{{ $.Values.controller.image }}:{{ $.Values.controller.tag }}"
         ports:
@@ -178,43 +215,6 @@ spec:
           value: "{{ $.Values.controller.env.UDM_DID }}"
         - name: UDR_DID
           value: "{{ $.Values.controller.env.UDR_DID }}"
-      - name: {{ .name }}
-        image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
-        imagePullPolicy: {{ .image.pullPolicy }}
-        securityContext:
-            {{- toYaml .securityContext | nindent 12 }}
-        ports:
-        - containerPort: 80
-        command: ["./nrf"]
-        args: ["-c", "../config/nrfcfg.yaml"]
-        env:
-          - name: DB_URI
-            value: mongodb://{{ $.Values.mongodb.service.name }}/free5gc
-          - name: GIN_MODE
-            value: release
-        volumeMounts:
-        - mountPath: {{ .volume.mount }}
-          name: {{ include "free5gc-nrf.fullname" $ }}-volume
-        resources:
-            {{- toYaml .resources | nindent 12 }}
-        readinessProbe:
-          initialDelaySeconds: {{ .readinessProbe.initialDelaySeconds }}
-          periodSeconds: {{ .readinessProbe.periodSeconds }}
-          timeoutSeconds: {{ .readinessProbe.timeoutSeconds }}
-          failureThreshold:  {{ .readinessProbe.failureThreshold }}
-          successThreshold: {{ .readinessProbe.successThreshold }}
-          httpGet:
-            scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
-            port: 80
-        livenessProbe:
-          initialDelaySeconds: {{ .livenessProbe.initialDelaySeconds }}
-          periodSeconds: {{ .livenessProbe.periodSeconds }}
-          timeoutSeconds: {{ .livenessProbe.timeoutSeconds }}
-          failureThreshold: {{ .livenessProbe.failureThreshold }}
-          successThreshold: {{ .livenessProbe.successThreshold }}
-          httpGet:
-            scheme: {{ $.Values.global.sbi.scheme | quote | upper }}
-            port: 80
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
