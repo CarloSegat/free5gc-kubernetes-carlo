@@ -257,7 +257,7 @@ amf:
       # ReportCaller: enable the caller report or not, value: true or false
     logger:
       AMF:
-        debugLevel: info
+        debugLevel: debug
         ReportCaller: false
       NAS:
         debugLevel: info
