@@ -45,7 +45,7 @@ controller:
     type: ClusterIP
     port: 9999
   env:
-    NF_TYPE: amf
+    NF_TYPE: udm
     ISSUER_DID: "J2168i1E7NNH3T1ZAtowHx"
     SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:1.5"
     CRED_DEF_ID: "J2168i1E7NNH3T1ZAtowHx:3:CL:14447:default"
