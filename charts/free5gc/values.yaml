@@ -93,7 +93,7 @@ global:
 # These parameters can be used to enable/disable deployment of subcharts
 deployMongoDb: true
 deployAmf: true
-deployAusf: false
+deployAusf: true
 deployN3iwf: false
 deployNrf: true
 deployNssf: false
