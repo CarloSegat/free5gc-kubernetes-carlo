@@ -173,3 +173,4 @@ hostAliases:
     - "amf.snet.tuberlin"
     - "udr.snet.tuberlin"
     - "upf.snet.tuberlin"
+    - "nrf-nnrf"
