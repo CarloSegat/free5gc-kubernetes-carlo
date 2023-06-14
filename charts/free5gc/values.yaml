@@ -113,11 +113,11 @@ free5gc-nrf:
 # This section can be used to override the default values in the MongoDB chart
 mongodb:
   fullnameOverride: "mongodb"
-  useStatefulSet: true
+  useStatefulSet: false
   auth:
     enabled: false
   persistence:
-    size: 6Gi
+    size: 3Gi
     mountPath: /bitnami/mongodb/data/db/
   service:
     name: mongodb
