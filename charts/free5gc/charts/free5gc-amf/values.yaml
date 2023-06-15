@@ -257,19 +257,19 @@ amf:
       # ReportCaller: enable the caller report or not, value: true or false
     logger:
       AMF:
-        debugLevel: trace
+        debugLevel: info
         ReportCaller: false
       NAS:
-        debugLevel: trace
+        debugLevel: info
         ReportCaller: false
       FSM:
-        debugLevel: trace
+        debugLevel: info
         ReportCaller: false
       NGAP:
-        debugLevel: trace
+        debugLevel: info
         ReportCaller: false
       Aper:
-        debugLevel: trace
+        debugLevel: info
         ReportCaller: false
 hostAliases:
   - ip: "127.0.0.1"
