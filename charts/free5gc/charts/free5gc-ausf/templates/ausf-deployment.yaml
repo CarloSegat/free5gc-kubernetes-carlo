@@ -210,5 +210,4 @@ spec:
           sources:
           - configMap:
               name: {{ include "free5gc-ausf.fullname" $ }}-configmap
-      - name: {{ $.Values.controller.env.NF_TYPE }}-data
 {{- end }}
