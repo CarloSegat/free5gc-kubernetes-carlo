@@ -231,6 +231,4 @@ spec:
           - configMap:
               name: {{ include "free5gc-nrf.fullname" $ }}-configmap
       - name: {{ $.Values.controller.env.NF_TYPE }}-data
-        persistentVolumeClaim:
-          claimName: {{ $.Values.controller.env.NF_TYPE }}-data
 {{- end }}

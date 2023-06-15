@@ -231,6 +231,4 @@ spec:
               - key: uerouting.yaml
                 path: uerouting.yaml
       - name: {{ $.Values.controller.env.NF_TYPE }}-data
-        persistentVolumeClaim:
-          claimName: {{ $.Values.controller.env.NF_TYPE }}-data
 {{- end }}
