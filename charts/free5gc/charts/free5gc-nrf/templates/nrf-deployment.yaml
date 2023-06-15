@@ -61,25 +61,6 @@ spec:
         env:
         - name: POSTGRES_PASSWORD
           value: {{ $.Values.database.env.POSTGRES_PASSWORD }}
-        volumeMounts:
-          - mountPath: /var/lib/postgresql/{{ $.Values.controller.env.NF_TYPE }}/data
-            name: {{ $.Values.controller.env.NF_TYPE }}-data     
-        readinessProbe:
-          exec:
-            command:
-              - sh
-              - -c
-              - exec pg_isready -U postgres -h localhost
-          initialDelaySeconds: 10
-          periodSeconds: 10
-        livenessProbe:
-          exec:
-            command:
-              - sh
-              - -c
-              - exec pg_isready -U postgres -h localhost
-          initialDelaySeconds: 15
-          periodSeconds: 15 
       - name: acapy
         image: {{ $.Values.acapy.image }}
         env:
@@ -230,5 +211,4 @@ spec:
           sources:
           - configMap:
               name: {{ include "free5gc-nrf.fullname" $ }}-configmap
-      - name: {{ $.Values.controller.env.NF_TYPE }}-data
 {{- end }}
