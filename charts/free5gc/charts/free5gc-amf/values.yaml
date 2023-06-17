@@ -226,17 +226,17 @@ amf:
       # retransmission timer for paging message
       t3513:
         enable: true     # true or false
-        expireTime: 6s   # default is 6 seconds
+        expireTime: 20s   # default is 6 seconds
         maxRetryTimes: 4 # the max number of retransmission
       # retransmission timer for NAS Registration Accept message
       t3522:
         enable: true     # true or false
-        expireTime: 6s   # default is 6 seconds
+        expireTime: 20s   # default is 6 seconds
         maxRetryTimes: 4 # the max number of retransmission
       # retransmission timer for NAS Registration Accept message
       t3550:
         enable: true     # true or false
-        expireTime: 6s   # default is 6 seconds
+        expireTime: 20s   # default is 6 seconds
         maxRetryTimes: 4 # the max number of retransmission
       # retransmission timer for NAS Authentication Request/Security Mode Command message
       t3560:
@@ -246,11 +246,11 @@ amf:
       # retransmission timer for NAS Notification message
       t3565:
         enable: true     # true or false
-        expireTime: 6s   # default is 6 seconds
+        expireTime: 20s   # default is 6 seconds
         maxRetryTimes: 4 # the max number of retransmission
       t3570:
         enable: true     # true or false
-        expireTime: 6s   # default is 6 seconds
+        expireTime: 20s   # default is 6 seconds
         maxRetryTimes: 4 # the max number of retransmission
     # the kind of log output
       # debugLevel: how detailed to output, value: trace, debug, info, warn, error, fatal, panic
