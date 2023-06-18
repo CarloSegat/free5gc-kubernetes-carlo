@@ -113,7 +113,7 @@ free5gc-nrf:
 # This section can be used to override the default values in the MongoDB chart
 mongodb:
   fullnameOverride: "mongodb"
-  useStatefulSet: false
+  useStatefulSet: true
   auth:
     enabled: false
   persistence:
