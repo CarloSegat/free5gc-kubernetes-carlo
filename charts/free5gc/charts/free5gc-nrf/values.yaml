@@ -54,6 +54,56 @@ mongodb:
     port: 27017
     nodePort: "30017"
 
+controller:
+  name: controller
+  image: haidinhtuan/controller
+  tag: latest
+  service:
+    type: ClusterIP
+    port: 9999
+  env:
+    NF_TYPE: nrf
+    ISSUER_DID: "J2168i1E7NNH3T1ZAtowHx"
+    SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:1.7"
+    CRED_DEF_ID: "J2168i1E7NNH3T1ZAtowHx:3:CL:14464:default"
+    ACAPY_IP: "127.0.0.1"
+    ACAPY_PORT: 7777
+    APP_PORT: 9999
+    DB_PORT: 5432
+    NF_PORT: 80
+    AMF_DID: "KQmkmEHAUb59MCBWGvHL8u"
+    AUSF_DID: "Y3vuh72yVH3JPokz868i9L"
+    NRF_DID: "S3SuLKgDtfALEshJLsQ6s5"
+    NSSF_DID: "Wg2idaauZ9i2kQfRMUJh43"
+    PCF_DID: "R2oSXYqQLZ1wTDBQHZZcMH"
+    SMF_DID: "KGQpk9XCTeSb8iFUWRo61r"
+    UDM_DID: "E2j1vjdsNg2fLYm58tqQH2"
+    UDR_DID: "TrheLkYW2NK6RAEHNrZDxc"
+
+database:
+  name: database
+  image: haidinhtuan/nf-db
+  env:
+    POSTGRES_PASSWORD: "postgres"
+
+acapy:
+  name: acapy
+  image: bcgovimages/aries-cloudagent:py36-1.16-1_0.8.1
+  env:
+    ACAPY_ADMIN_INSECURE_MODE: "true"
+    ACAPY_AUTO_PROVISION: "true"
+    ACAPY_DEBUG_CONNECTIONS: "true"
+    ACAPY_ENDPOINT: "http://free5gc-core-free5gc-nrf-acapy-service:5555"
+    ACAPY_LABEL: "NRF"
+    ACAPY_LOG_LEVEL: "info"
+    ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
+    ADMIN_PORT: "7777"
+    AGENT_PORT: "5555"
+    SEED: "01234567890123456789012345678nrf"
+  service: 
+    type: ClusterIP
+    port: 5555
+
 nrf:
   name: nrf
   replicaCount: 1
