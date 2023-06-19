@@ -14,6 +14,6 @@ helm repo index --url https://haidinhtuan.github.io/free5gc-kubernetes/ .
 
 # Commit changes to Git repository
 git add .
-git commit -m "update Helm chart"
+git commit -m "update Sidecar chart"
 git push
 

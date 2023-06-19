@@ -52,75 +52,9 @@ spec:
         env:
         - name: DEPENDENCIES
           value: {{ $.Values.global.sbi.scheme }}://{{ $.Values.global.nrf.service.name }}:{{ $.Values.global.nrf.service.port }}
-        command: ['sh', '-c', 'set -x; for dependency in $DEPENDENCIES; do while [ $(curl --insecure --connect-timeout 1 -s -o /dev/null -w "%{http_code}" $dependency) -ne 200 ]; do echo waiting for dependencies; sleep 1; done; done;']
+        command: ['sh', '-c', 'set -x; for dependency in $DEPENDENCIES; do while [ $(curl --insecure --connect-timeout 1 -s -o /dev/null -w "%{http_code}" $dependency) -ne 200 ]; do echo waiting for dependencies; sleep 1; done; sleep 15; done;']
 
       containers:
-      - name: database
-        image: {{ $.Values.database.image }}
-        ports:
-          - containerPort: 5432
-        env:
-        - name: POSTGRES_PASSWORD
-          value: {{ $.Values.database.env.POSTGRES_PASSWORD }}
-      - name: acapy
-        image: {{ $.Values.acapy.image }}
-        env:
-        - name: ACAPY_ADMIN_INSECURE_MODE
-          value: "{{ $.Values.acapy.env.ACAPY_ADMIN_INSECURE_MODE }}"
-        - name: ACAPY_AUTO_PROVISION
-          value: "{{ $.Values.acapy.env.ACAPY_AUTO_PROVISION }}"
-        - name: ACAPY_DEBUG_CONNECTIONS
-          value: "{{ $.Values.acapy.env.ACAPY_DEBUG_CONNECTIONS }}"
-        - name: ACAPY_ENDPOINT
-          value: "{{ $.Values.acapy.env.ACAPY_ENDPOINT }}"
-        - name: ACAPY_LABEL
-          value: "{{ $.Values.acapy.env.ACAPY_LABEL }}"
-        - name: ACAPY_LOG_LEVEL
-          value: "{{ $.Values.acapy.env.ACAPY_LOG_LEVEL }}"
-        - name: ACAPY_GENESIS_URL
-          value: "{{ $.Values.acapy.env.ACAPY_GENESIS_URL }}"
-        - name: ADMIN_PORT
-          value: "{{ $.Values.acapy.env.ADMIN_PORT }}"
-        - name: AGENT_PORT
-          value: "{{ $.Values.acapy.env.AGENT_PORT }}"
-        - name: ISSUER_DID
-          value: "{{ $.Values.acapy.env.ISSUER_DID }}"
-        - name: SCHEMA_ID
-          value: "{{ $.Values.acapy.env.SCHEMA_ID }}"
-        - name: CRED_DEF_ID
-          value: "{{ $.Values.acapy.env.CRED_DEF_ID }}"
-        command:
-          - "/bin/bash"
-          - "-c"
-          - >
-            aca-py start \
-              --admin '0.0.0.0' {{ $.Values.acapy.env.ADMIN_PORT }} \
-              --inbound-transport http '0.0.0.0' {{ $.Values.acapy.env.AGENT_PORT }} \
-              --webhook-url 'http://localhost:9999/webhooks' \
-              --outbound-transport http \
-              --wallet-type askar \
-              --wallet-name tub-wallet \
-              --wallet-key tub-key \
-              --preserve-exchange-records \
-              --auto-provision \
-              --public-invites \
-              --auto-accept-invites \
-              --seed {{ $.Values.acapy.env.SEED }} \
-              --auto-accept-requests \
-              --auto-ping-connection \
-              --auto-respond-credential-proposal \
-              --auto-respond-credential-offer \
-              --auto-respond-credential-request \
-              --auto-respond-presentation-proposal \
-              --auto-respond-presentation-request \
-              --auto-store-credential \
-              --auto-verify-presentation \
-              --preserve-exchange-records \
-              --invite-public \
-              --requests-through-public-did \
-              --log-level INFO
-        ports:
-          - containerPort: 5555
       - name: {{ .name }}
         image: {{ .image.name }}:{{ .image.tag | default $.Chart.AppVersion }}
         imagePullPolicy: {{ .image.pullPolicy }}
@@ -138,45 +72,10 @@ spec:
           name: {{ include "free5gc-udm.fullname" $ }}-volume
         resources:
             {{- toYaml .resources | nindent 12 }}
-      - name: controller
-        image: "{{ $.Values.controller.image }}:{{ $.Values.controller.tag }}"
+      - name: sidecar
+        image: "{{ $.Values.sidecar.image }}:{{ $.Values.sidecar.tag }}"
         ports:
         - containerPort: 9999
-        env:
-        - name: NF_TYPE
-          value: "{{ $.Values.controller.env.NF_TYPE }}"
-        - name: ISSUER_DID
-          value: "{{ $.Values.controller.env.ISSUER_DID }}"
-        - name: SCHEMA_ID
-          value: "{{ $.Values.controller.env.SCHEMA_ID }}"
-        - name: CRED_DEF_ID
-          value: "{{ $.Values.controller.env.CRED_DEF_ID }}"
-        - name: ACAPY_IP
-          value: "{{ $.Values.controller.env.ACAPY_IP }}"
-        - name: ACAPY_PORT
-          value: "{{ $.Values.controller.env.ACAPY_PORT }}"
-        - name: APP_PORT
-          value: "{{ $.Values.controller.env.APP_PORT }}"
-        - name: DB_PORT
-          value: "{{ $.Values.controller.env.DB_PORT }}"
-        - name: NF_PORT
-          value: "{{ $.Values.controller.env.NF_PORT }}"
-        - name: AMF_DID
-          value: "{{ $.Values.controller.env.AMF_DID }}"
-        - name: AUSF_DID
-          value: "{{ $.Values.controller.env.AUSF_DID }}"
-        - name: NRF_DID
-          value: "{{ $.Values.controller.env.NRF_DID }}"
-        - name: NSSF_DID
-          value: "{{ $.Values.controller.env.NSSF_DID }}"
-        - name: PCF_DID
-          value: "{{ $.Values.controller.env.PCF_DID }}"
-        - name: SMF_DID
-          value: "{{ $.Values.controller.env.SMF_DID }}"
-        - name: UDM_DID
-          value: "{{ $.Values.controller.env.UDM_DID }}"
-        - name: UDR_DID
-          value: "{{ $.Values.controller.env.UDR_DID }}"
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       nodeSelector:
