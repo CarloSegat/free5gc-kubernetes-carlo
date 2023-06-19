@@ -29,10 +29,10 @@ acapy:
       ACAPY_ENDPOINT: "http://free5gc-core-free5gc-ssim-acapy-service:5555"
       ACAPY_LABEL: "SSIM"
       ACAPY_LOG_LEVEL: "info"
-      ACAPY_GENESIS_URL: "https://raw.githubusercontent.com/sovrin-foundation/sovrin/master/sovrin/pool_transactions_builder_genesis"
+      ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
       ADMIN_PORT: "7777"
       AGENT_PORT: "5555"
-      SEED: "T37wmoLQ9kNT63izDbng0wUTBuibS12P"
+      SEED: "0123456789012345678901234567ssim"
   service: 
     type: ClusterIP
     port: 5555
