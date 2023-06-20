@@ -2,16 +2,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "free5gc-udm.fullname" $ }}-sidecar-service
+  name: {{ include "free5gc-udm.fullname" $ }}-acapy-service
   labels:
     {{- include "free5gc-udm.labels" $ | nindent 4 }}
     project: {{ $.Values.global.projectName }}
     nf: {{ .name }}
 spec:
-  type: {{ $.Values.sidecar.service.type }}
+  type: {{ $.Values.acapy.service.type }}
   ports:
-    - port: {{ $.Values.sidecar.service.port }}
-      targetPort: 9999
+    - port: {{ $.Values.acapy.service.port }}
+      targetPort: 5555
       protocol: TCP
       name: http
   selector:
