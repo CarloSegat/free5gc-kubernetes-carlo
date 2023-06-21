@@ -61,9 +61,9 @@ controller:
     port: 9999
   env:
     NF_TYPE: smf
-    ISSUER_DID: "8G6ng6cn8iNnkU265MbGgJ"
-    SCHEMA_ID: "8G6ng6cn8iNnkU265MbGgJ:2:auth:1.0"
-    CRED_DEF_ID: "8G6ng6cn8iNnkU265MbGgJ:3:CL:55507:default"
+    ISSUER_DID: "J2168i1E7NNH3T1ZAtowHx"
+    SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:2.0"
+    CRED_DEF_ID: "J2168i1E7NNH3T1ZAtowHx:3:CL:14475:default"
     ACAPY_IP: "127.0.0.1"
     ACAPY_PORT: 7777
     APP_PORT: 9999
@@ -98,7 +98,7 @@ acapy:
     ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
     ADMIN_PORT: "7777"
     AGENT_PORT: "5555"
-    SEED: "WKhZPrmu3F6goFiNEs4ngb5bQ93X00mD"
+    SEED: "01234567890123456789012345678smf"
   service: 
     type: ClusterIP
     port: 5555
