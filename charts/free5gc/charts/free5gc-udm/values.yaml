@@ -54,14 +54,14 @@ controller:
     APP_PORT: 9999
     DB_PORT: 5432
     NF_PORT: 80
-    AMF_DID: "XttS63fu9n3NtKgQKDxwGi"
-    AUSF_DID: "R4XrH8yGdYsVJt2mZZ5PbT"
-    NRF_DID: "y77ZersNcdw9QaT2Jwucv"
-    NSSF_DID: "4iQ373D2PMBPPFenwKU7GQ"
-    PCF_DID: "NnG1VLYrsUC7aW2qvkuDZE"
-    SMF_DID: "VK4N2U7aEToneqAu7bGSqp"
-    UDM_DID: "Lq757Qm8wH4eHvcPY8yjfK"
-    UDR_DID: "UGCCvUZwjKvmK3yzBCN36g"
+    AMF_DID: "KQmkmEHAUb59MCBWGvHL8u"
+    AUSF_DID: "Y3vuh72yVH3JPokz868i9L"
+    NRF_DID: "S3SuLKgDtfALEshJLsQ6s5"
+    NSSF_DID: "Wg2idaauZ9i2kQfRMUJh43"
+    PCF_DID: "R2oSXYqQLZ1wTDBQHZZcMH"
+    SMF_DID: "KGQpk9XCTeSb8iFUWRo61r"
+    UDM_DID: "E2j1vjdsNg2fLYm58tqQH2"
+    UDR_DID: "TrheLkYW2NK6RAEHNrZDxc"
 
 
 database:
@@ -80,7 +80,7 @@ acapy:
     ACAPY_ENDPOINT: "http://free5gc-core-free5gc-udm-acapy-service:5555"
     ACAPY_LABEL: "UDM"
     ACAPY_LOG_LEVEL: "info"
-    ACAPY_GENESIS_URL: "https://raw.githubusercontent.com/IDunion/indy-did-networks/main/networks/idunion/test/pool_transactions_genesis.json"
+    ACAPY_GENESIS_URL: "http://greenlight.bcovrin.vonx.io/genesis"
     ADMIN_PORT: "7777"
     AGENT_PORT: "5555"
     SEED: "9MDe89Sfkr4DEq6vZpmq4oXItuXteaMa"
