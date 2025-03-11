@@ -6,7 +6,7 @@ ENV ACAPY_ADMIN_INSECURE_MODE="true" \
     ACAPY_ENDPOINT="http://localhost:9100" \
     ACAPY_LABEL="SSI-M" \
     ACAPY_LOG_LEVEL="info" \
-    ACAPY_GENESIS_URL="http://greenlight.bcovrin.vonx.io/genesis" \
+    ACAPY_GENESIS_URL="https://git.tu-berlin.de/research-projects/indy-cli-tutorial/-/raw/main/local_genesis.json" \
     ADMIN_PORT="9999" \
     AGENT_PORT="9100"
 
