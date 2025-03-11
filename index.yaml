@@ -3,7 +3,7 @@ entries:
   free5gc:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-03-11T12:29:34.780085+01:00"
+    created: "2025-03-11T13:08:43.028623+01:00"
     dependencies:
     - condition: deployMongoDb
       name: mongodb
@@ -45,7 +45,7 @@ entries:
       name: free5gc-dbpython
       repository: ""
     description: A Helm chart to deploy Free5gc
-    digest: a917646d1b76884b90fa58b4a486bd407951befae7fe0bb775cb53455437dd29
+    digest: 540d89a075aeebca3d0968af12db2293b9a8a5590405abb2825ecca9b4865ca8
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
     maintainers:
     - email: abderaouf.khichane@orange.com
@@ -56,11 +56,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.1.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.1.6.tgz
     version: 1.1.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.768764+01:00"
+    created: "2025-03-11T13:08:43.016982+01:00"
     dependencies:
     - condition: deployMongoDb
       name: mongodb
@@ -113,11 +113,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.1.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.1.5.tgz
     version: 1.1.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.757988+01:00"
+    created: "2025-03-11T13:08:43.005604+01:00"
     dependencies:
     - condition: deployMongoDB
       name: mongodb
@@ -167,11 +167,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.1.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.1.4.tgz
     version: 1.1.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.747655+01:00"
+    created: "2025-03-11T13:08:42.994892+01:00"
     dependencies:
     - condition: deployMongoDB
       name: mongodb
@@ -221,11 +221,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.1.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.1.3.tgz
     version: 1.1.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.73683+01:00"
+    created: "2025-03-11T13:08:42.983568+01:00"
     dependencies:
     - condition: deployMongoDB
       name: mongodb
@@ -275,11 +275,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.1.2.tgz
     version: 1.1.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.726318+01:00"
+    created: "2025-03-11T13:08:42.972469+01:00"
     dependencies:
     - condition: deployMongoDB
       name: mongodb
@@ -329,11 +329,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.1.1.tgz
     version: 1.1.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.71564+01:00"
+    created: "2025-03-11T13:08:42.961675+01:00"
     dependencies:
     - condition: deployMongoDB
       name: mongodb
@@ -383,11 +383,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.0.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.704599+01:00"
+    created: "2025-03-11T13:08:42.950145+01:00"
     dependencies:
     - condition: deployMongoDB
       name: mongodb
@@ -437,11 +437,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-1.0.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.69391+01:00"
+    created: "2025-03-11T13:08:42.938757+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -467,11 +467,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.68977+01:00"
+    created: "2025-03-11T13:08:42.93415+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -497,11 +497,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 3.0.4
-    created: "2025-03-11T12:29:34.685265+01:00"
+    created: "2025-03-11T13:08:42.929683+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -527,12 +527,12 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gc
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-0.1.0.tgz
     version: 0.1.0
   free5gc-amf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.784187+01:00"
+    created: "2025-03-11T13:08:43.032688+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: 0376c42e1dee49a65d1ddb7a6b038ce4994c14ac5635531ddbe82e951d62a9cc
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -546,11 +546,11 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.783748+01:00"
+    created: "2025-03-11T13:08:43.032238+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: 047cb6a1119b87bf8d278e9b9861e061ea6b23f9c596edb70a25367eb90b26da
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -564,11 +564,11 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.783303+01:00"
+    created: "2025-03-11T13:08:43.03178+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: a4d68667bb7b3ca2a8d292017f6d180ff4a736f12e347ac2f2ce6698342a2860
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -582,11 +582,11 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.782849+01:00"
+    created: "2025-03-11T13:08:43.031323+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: e11edd131790723cd3640cd42635190acfa670795d63b71786f8648813c91820
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -600,11 +600,11 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.782364+01:00"
+    created: "2025-03-11T13:08:43.030865+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: e653823897c4893e813381231e82305f958e39680fc84ad79e8512072ef16701
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -618,11 +618,11 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.781794+01:00"
+    created: "2025-03-11T13:08:43.030308+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: 33d74483ec611c0525094c481529e75f0406d0a1c8e3f1350d9ca90c2e5aad49
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -636,11 +636,11 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.781233+01:00"
+    created: "2025-03-11T13:08:43.029766+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: 1952438f966ba656a952519cc9ced6c4a2d07b2baa93d87f64042aa4faed6531
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -654,11 +654,11 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.780625+01:00"
+    created: "2025-03-11T13:08:43.029176+01:00"
     description: A Helm chart to deploy the Free5GC AMF
     digest: 58b7071ce2e97457bf26202c6954882053fb505d47e652b4135126bd14308e24
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -672,12 +672,12 @@ entries:
     name: free5gc-amf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-amf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-amf-0.1.0.tgz
     version: 0.1.0
   free5gc-ausf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.787188+01:00"
+    created: "2025-03-11T13:08:43.035549+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: 3a220e1e24e76c3f4d761b2dc744b2fe264d8f5ce96bec9fd5fea29c8f38e80a
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -691,11 +691,11 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.78688+01:00"
+    created: "2025-03-11T13:08:43.035218+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: 9905fcf72ef7e3396baeb80e5737d4c038d196601d67e153e55a0324d426db81
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -709,11 +709,11 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.786543+01:00"
+    created: "2025-03-11T13:08:43.034865+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: 4cb16b93334a7dd32af1b4312eeebcf0b81fb2200cf6fd66191f5042ce3f33a9
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -727,11 +727,11 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.786192+01:00"
+    created: "2025-03-11T13:08:43.034517+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: 2bb41b5ba93f91ab1a2da8be4877fb7ca4a659b83c12d011a844f69e39067eb2
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -745,11 +745,11 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.785836+01:00"
+    created: "2025-03-11T13:08:43.034166+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: dfd104e51f8c83dbbb8180431c16f31bbbb2bc2be7225c4115d02c7c9cdab438
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -763,11 +763,11 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.785476+01:00"
+    created: "2025-03-11T13:08:43.033813+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: 7f8871ff43926ba938445daded56daf9b0c9c1cf7edcb991b9bf5ea749e4f8a1
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -781,11 +781,11 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.784863+01:00"
+    created: "2025-03-11T13:08:43.033442+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: 4b82ea0a0a748cfba626cf838b805862393344b8a61e0e52926fcc178a6fc7c0
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -799,11 +799,11 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.784504+01:00"
+    created: "2025-03-11T13:08:43.033025+01:00"
     description: A Helm chart to deploy the Free5GC AUSF
     digest: 01fbf36fdf10ef785401dd1da60d37d71b77f921cc54a05ccc078a156e0e9156
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -817,12 +817,12 @@ entries:
     name: free5gc-ausf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-ausf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-ausf-0.1.0.tgz
     version: 0.1.0
   free5gc-dbpython:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.787438+01:00"
+    created: "2025-03-11T13:08:43.03586+01:00"
     description: A Helm chart to deploy the free5GC dbpython
     digest: affbd9c2b6b1c1eddfb8f5e1365bb2ce26f664f3bf96905164d4dc170eb0829e
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -832,12 +832,12 @@ entries:
     name: free5gc-dbpython
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-dbpython-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-dbpython-0.1.0.tgz
     version: 0.1.0
   free5gc-n3iwf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.790028+01:00"
+    created: "2025-03-11T13:08:43.038779+01:00"
     description: A Helm chart to deploy the Free5GC N3IWF
     digest: 4be36e0a5f354826492713267381be8131fb3c7d44a13d4b068d48f61a9fa01d
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -851,11 +851,11 @@ entries:
     name: free5gc-n3iwf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-n3iwf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-n3iwf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.789642+01:00"
+    created: "2025-03-11T13:08:43.038377+01:00"
     description: A Helm chart to deploy the Free5GC N3IWF
     digest: 5ddab3d7844f5c809eaa3ccf731e1af03972eb0b4d245dc4c690ac8b6cd70c62
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -869,11 +869,11 @@ entries:
     name: free5gc-n3iwf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-n3iwf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-n3iwf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.789259+01:00"
+    created: "2025-03-11T13:08:43.03797+01:00"
     description: A Helm chart to deploy the Free5GC N3IWF
     digest: b6b96209131e86354763107d823adc80f855d8089458c2eabbe98d3a958f3889
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -887,11 +887,11 @@ entries:
     name: free5gc-n3iwf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-n3iwf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-n3iwf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.788879+01:00"
+    created: "2025-03-11T13:08:43.037536+01:00"
     description: A Helm chart to deploy the Free5GC N3IWF
     digest: 33ef20b85e9da7892d2d545bd4249e13085def8925a300285fe35b79b8f1d1ad
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -905,11 +905,11 @@ entries:
     name: free5gc-n3iwf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-n3iwf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-n3iwf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.788418+01:00"
+    created: "2025-03-11T13:08:43.037033+01:00"
     description: A Helm chart to deploy the Free5GC N3IWF
     digest: 12d9ee3a2892c1cff818b246c9ab03d342a60c6f51226589aa37c2d5933d4b9d
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -923,11 +923,11 @@ entries:
     name: free5gc-n3iwf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-n3iwf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-n3iwf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.787889+01:00"
+    created: "2025-03-11T13:08:43.036352+01:00"
     description: A Helm chart to deploy the Free5GC N3IWF
     digest: 40afbce29e88d4cdb7f8ffd781d59193f0edc93f4160712d8ba66d5372d87832
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -941,12 +941,12 @@ entries:
     name: free5gc-n3iwf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-n3iwf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-n3iwf-0.1.0.tgz
     version: 0.1.0
   free5gc-nrf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.80821+01:00"
+    created: "2025-03-11T13:08:43.056887+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -964,11 +964,11 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.806348+01:00"
+    created: "2025-03-11T13:08:43.054532+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -986,11 +986,11 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.804202+01:00"
+    created: "2025-03-11T13:08:43.052406+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1008,11 +1008,11 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.801725+01:00"
+    created: "2025-03-11T13:08:43.050316+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1030,11 +1030,11 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.799543+01:00"
+    created: "2025-03-11T13:08:43.047917+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1052,11 +1052,11 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.797325+01:00"
+    created: "2025-03-11T13:08:43.045744+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1074,11 +1074,11 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.794571+01:00"
+    created: "2025-03-11T13:08:43.043571+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1096,11 +1096,11 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.792371+01:00"
+    created: "2025-03-11T13:08:43.041004+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1118,12 +1118,12 @@ entries:
     name: free5gc-nrf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nrf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nrf-0.1.0.tgz
     version: 0.1.0
   free5gc-nssf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.812045+01:00"
+    created: "2025-03-11T13:08:43.060734+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: 5f74b0a2a37320f58c430a6cb72b49cad6e2477f2c28de2ed3079e719b5014fa
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1137,11 +1137,11 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.811582+01:00"
+    created: "2025-03-11T13:08:43.060248+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: 0cc005ea4e9f7f3b0fc0f4e27b37aafa8f47b8235d77b0fe454f85e01f7eaa9e
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1155,11 +1155,11 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.81117+01:00"
+    created: "2025-03-11T13:08:43.059822+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: fedea241b798027231b6b3cd9b1414b0669c302b7f3698c618cadb7de6ffef1c
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1173,11 +1173,11 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.810769+01:00"
+    created: "2025-03-11T13:08:43.05939+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: f70604f72bf14844d38cca1c625d950a6dfe442c05a85996baae20485f3cc65c
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1191,11 +1191,11 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.81035+01:00"
+    created: "2025-03-11T13:08:43.058948+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: 1da84a108a219f55194eb0a2105f2f84c1af5bfd1d8e34a77d097d95f169b21d
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1209,11 +1209,11 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.809916+01:00"
+    created: "2025-03-11T13:08:43.058521+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: 943bf6bf62d1605bd0b87239639e3af12868bf3a02cc01f5e6cce3c12743809c
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1227,11 +1227,11 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.809492+01:00"
+    created: "2025-03-11T13:08:43.05804+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: c1a5b9517d518afc24f23e1fd5fe9477b6b0c1c03a14790b22826eb0125613cd
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1245,11 +1245,11 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.808854+01:00"
+    created: "2025-03-11T13:08:43.057444+01:00"
     description: A Helm chart to deploy the Free5GC NSSF
     digest: 76f8c9a55a86b615eb5a325e0bf2667288ad3fa3fb728769aa3c2404c087c52e
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1263,12 +1263,12 @@ entries:
     name: free5gc-nssf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-nssf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-nssf-0.1.0.tgz
     version: 0.1.0
   free5gc-pcf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.815505+01:00"
+    created: "2025-03-11T13:08:43.063987+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: 225b7628f1ef76baf9eb7858585201f459114d5ccc62fe1a87155b63166de8ba
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1282,11 +1282,11 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.815158+01:00"
+    created: "2025-03-11T13:08:43.063651+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: eb2f538189ff853ca19d1d9551297690d494ef2c1f9414454cedc1d4e2729df3
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1300,11 +1300,11 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.814804+01:00"
+    created: "2025-03-11T13:08:43.063311+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: a27e7c1d7499781e3e23bc84fb032c3b589c67ebaa46e940803d0ac6a1a4bab7
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1318,11 +1318,11 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.814363+01:00"
+    created: "2025-03-11T13:08:43.062967+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: a51be1c8dcb07e1083a964270f96988298eb221199edbbf4c8e8fd2d3e4dac71
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1336,11 +1336,11 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.813874+01:00"
+    created: "2025-03-11T13:08:43.062617+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: 6e80f875f68784c78301299df8b98c4aab70744cb783ca9fc6e977fca8b80b83
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1354,11 +1354,11 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.81351+01:00"
+    created: "2025-03-11T13:08:43.062267+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: d144567d1063c078dd44e8297673c734cf276fc8b9951fbbd595118dedd8c905
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1372,11 +1372,11 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.813162+01:00"
+    created: "2025-03-11T13:08:43.061904+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: 2e4ccac0c2951596b8d88116259a0f807cfe28306280ca64f4dc472caed525db
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1390,11 +1390,11 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.812516+01:00"
+    created: "2025-03-11T13:08:43.06126+01:00"
     description: A Helm chart to deploy the Free5GC PCF
     digest: 9b069592bcd8a86c8f6ef463a0a215d4308acab95259aa9d865ec6eae64d7e77
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1408,12 +1408,12 @@ entries:
     name: free5gc-pcf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-pcf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-pcf-0.1.0.tgz
     version: 0.1.0
   free5gc-smf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.820375+01:00"
+    created: "2025-03-11T13:08:43.069301+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: 7659d3ed52c6e1fce6d327ad0eab093a628da58ce155757ef7d65bf3391bc76b
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1427,11 +1427,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.819817+01:00"
+    created: "2025-03-11T13:08:43.068815+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: 096c8b86d7161b301718fe2fc160f433c67429247c9712761093ac54b22cb0a0
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1445,11 +1445,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.819239+01:00"
+    created: "2025-03-11T13:08:43.068321+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: 21b6d12b1e58d2944ff44c32cee13355b8b3a13470b6452dfa099867476a997b
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1463,11 +1463,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.81865+01:00"
+    created: "2025-03-11T13:08:43.067714+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: 4a8ea5bc57a4590d133a48f1b4ecdd99e83e0e1eeffddb2bb7d016b178640bcd
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1481,11 +1481,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.818074+01:00"
+    created: "2025-03-11T13:08:43.066948+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: 57785c62643e18191892f721baca69a9d79292837f846e8c434ab4b7ecedff4e
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1499,11 +1499,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.817605+01:00"
+    created: "2025-03-11T13:08:43.066239+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: 9a20c9a02c27403f26674ef5037711a9291528a3c3bd7ad2c8effc61dc6c5755
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1517,11 +1517,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.817141+01:00"
+    created: "2025-03-11T13:08:43.065736+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: daefc8218dcd6489e8e1e8df3c9b1005f3cabe2ffb0fcc353e3aecb7901f90d5
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1535,11 +1535,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.816535+01:00"
+    created: "2025-03-11T13:08:43.065115+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: 14f612844967c313c9b49c6837afe923518d7cf8986fe0953456a47bd532ed1d
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1553,11 +1553,11 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.815947+01:00"
+    created: "2025-03-11T13:08:43.064426+01:00"
     description: A Helm chart to deploy the Free5GC SMF
     digest: c32f1eb26de693af7726623bf7aa03981163dac5c59ea0eb6a6c414d50ebdeef
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1571,12 +1571,12 @@ entries:
     name: free5gc-smf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-smf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-smf-0.1.0.tgz
     version: 0.1.0
   free5gc-udm:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.823445+01:00"
+    created: "2025-03-11T13:08:43.072106+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: 9e661241f61c2e7f0c6bf3c42e4d62e564003d36f484b004971f0e21526fb501
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1590,11 +1590,11 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.82313+01:00"
+    created: "2025-03-11T13:08:43.071778+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: 606f4a6f375bbaff3a71cafbae0bce1b130bc0790196f4253256b4f023f74b4b
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1608,11 +1608,11 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.822791+01:00"
+    created: "2025-03-11T13:08:43.07143+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: 85d894257c2cda5363a92c511e5a0bb7b5f7ece7f65748a04dd2a0fc9bf4065f
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1626,11 +1626,11 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.822458+01:00"
+    created: "2025-03-11T13:08:43.07108+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: 6def9728aacaebbffbad829ad5bc0d66612d33087b6af9fe6e8403a185f10132
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1644,11 +1644,11 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.822103+01:00"
+    created: "2025-03-11T13:08:43.070728+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: a6a830f5bd002b19ee013d90f05b2aa400531eb5ba1de0fdb0ddd6977a0f8b8f
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1662,11 +1662,11 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.821753+01:00"
+    created: "2025-03-11T13:08:43.070377+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: 2649eebf18f6b7caa245fed445fa7f3d3e251e54af074c9ec2a6d844dd2c21b9
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1680,11 +1680,11 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.821391+01:00"
+    created: "2025-03-11T13:08:43.070021+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: 85375dde68bf7c6194f495d503d8075a9cb5005679d9bc394fcad2958a706c5b
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1698,11 +1698,11 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.821014+01:00"
+    created: "2025-03-11T13:08:43.069651+01:00"
     description: A Helm chart to deploy the Free5GC UDM
     digest: 1910073f167aa8b48e6aeeed72dcf2a565250a3b97996980697570c1ea38b03a
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1716,12 +1716,12 @@ entries:
     name: free5gc-udm
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udm-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udm-0.1.0.tgz
     version: 0.1.0
   free5gc-udr:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.840443+01:00"
+    created: "2025-03-11T13:08:43.089676+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1739,11 +1739,11 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.838544+01:00"
+    created: "2025-03-11T13:08:43.087714+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1761,11 +1761,11 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.836388+01:00"
+    created: "2025-03-11T13:08:43.085728+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1783,11 +1783,11 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.834494+01:00"
+    created: "2025-03-11T13:08:43.083446+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1805,11 +1805,11 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.832305+01:00"
+    created: "2025-03-11T13:08:43.081088+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1827,11 +1827,11 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.2.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.830023+01:00"
+    created: "2025-03-11T13:08:43.079096+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1849,11 +1849,11 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.828089+01:00"
+    created: "2025-03-11T13:08:43.076748+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1871,11 +1871,11 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.825991+01:00"
+    created: "2025-03-11T13:08:43.074726+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -1893,12 +1893,12 @@ entries:
     name: free5gc-udr
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-udr-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-udr-0.1.0.tgz
     version: 0.1.0
   free5gc-upf:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.846146+01:00"
+    created: "2025-03-11T13:08:43.095547+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: b9b0fcc52dccf013db2638a3e50b3e9c3a978a6b0b68130f1f7171c1bddd5915
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1912,11 +1912,11 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.2.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.84543+01:00"
+    created: "2025-03-11T13:08:43.094949+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: 93ac9df8a67d8931a48b698edbe23830910863c74a65689b4d6d7fb5536d5974
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1930,11 +1930,11 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.2.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.844737+01:00"
+    created: "2025-03-11T13:08:43.094328+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: 590b3f8c69491319ab5f8743b8f2b52a3a077695eebe2e34d3af6781d407ec4d
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1948,11 +1948,11 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.2.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.844057+01:00"
+    created: "2025-03-11T13:08:43.093558+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: 970781c3a87e4e48b14388fce95563b9e842512b64287123b5209cebdd109de5
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1966,11 +1966,11 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.2.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.843288+01:00"
+    created: "2025-03-11T13:08:43.092848+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: 8a285669fe57f53fb6e85e640c0f742a11ce7b1e29df0c97619c9bb863764183
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -1984,11 +1984,11 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.2.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.842623+01:00"
+    created: "2025-03-11T13:08:43.092204+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: fbb0dafe7698b7f119295a12b2283f7a2e6400f70a916d63d9ac54934f9f931c
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -2002,11 +2002,11 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.841711+01:00"
+    created: "2025-03-11T13:08:43.091545+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: 991475f2f6d36a1509ee2d1a547732c84c348d47babe3eb19909c6cc58afea1e
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -2020,11 +2020,11 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.841072+01:00"
+    created: "2025-03-11T13:08:43.090451+01:00"
     description: A Helm chart to deploy the Free5GC User Plane
     digest: 109602e92d650d2e96a91bab01cdf0d8a4c3e29b69ea0affe0d5096c87a70d19
     icon: https://camo.githubusercontent.com/915dcf8299b3d2bfe2b2693c5401916cb31e31fb690a73e7da327808000efa37/68747470733a2f2f666f72756d2e667265653567632e6f72672f75706c6f6164732f64656661756c742f6f726967696e616c2f31582f333234363935626663363438316264353536633131303138663238333430383663663565633634352e706e67
@@ -2038,12 +2038,12 @@ entries:
     name: free5gc-upf
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-upf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-upf-0.1.0.tgz
     version: 0.1.0
   free5gc-webui:
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.858522+01:00"
+    created: "2025-03-11T13:08:43.10854+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -2061,11 +2061,11 @@ entries:
     name: free5gc-webui
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-webui-0.1.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-webui-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.856665+01:00"
+    created: "2025-03-11T13:08:43.106364+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -2083,11 +2083,11 @@ entries:
     name: free5gc-webui
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-webui-0.1.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-webui-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.854748+01:00"
+    created: "2025-03-11T13:08:43.104374+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -2105,11 +2105,11 @@ entries:
     name: free5gc-webui
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-webui-0.1.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-webui-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.852594+01:00"
+    created: "2025-03-11T13:08:43.102371+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -2127,11 +2127,11 @@ entries:
     name: free5gc-webui
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-webui-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-webui-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: v3.0.6
-    created: "2025-03-11T12:29:34.850468+01:00"
+    created: "2025-03-11T13:08:43.09987+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -2149,11 +2149,11 @@ entries:
     name: free5gc-webui
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-webui-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-webui-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.848506+01:00"
+    created: "2025-03-11T13:08:43.097902+01:00"
     dependencies:
     - condition: db.enabled
       name: mongodb
@@ -2171,12 +2171,12 @@ entries:
     name: free5gc-webui
     type: application
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gc-webui-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gc-webui-0.1.0.tgz
     version: 0.1.0
   free5gcControlPlane:
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.866892+01:00"
+    created: "2025-03-11T13:08:43.117091+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2197,11 +2197,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcControlPlane
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcControlPlane-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcControlPlane-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.863828+01:00"
+    created: "2025-03-11T13:08:43.114152+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2221,11 +2221,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcControlPlane
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcControlPlane-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcControlPlane-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 3.0.4
-    created: "2025-03-11T12:29:34.861378+01:00"
+    created: "2025-03-11T13:08:43.111183+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2245,12 +2245,12 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcControlPlane
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcControlPlane-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcControlPlane-0.1.0.tgz
     version: 0.1.0
   free5gcN3iwf:
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.868556+01:00"
+    created: "2025-03-11T13:08:43.1186+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2268,11 +2268,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcN3iwf
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcN3iwf-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcN3iwf-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.868025+01:00"
+    created: "2025-03-11T13:08:43.118096+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2289,11 +2289,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcN3iwf
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcN3iwf-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcN3iwf-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 3.0.4
-    created: "2025-03-11T12:29:34.867479+01:00"
+    created: "2025-03-11T13:08:43.117596+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2310,12 +2310,12 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcN3iwf
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcN3iwf-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcN3iwf-0.1.0.tgz
     version: 0.1.0
   free5gcUserPlane:
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.87051+01:00"
+    created: "2025-03-11T13:08:43.120947+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2333,11 +2333,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcUserPlane
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcUserPlane-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcUserPlane-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: v3.0.5
-    created: "2025-03-11T12:29:34.869894+01:00"
+    created: "2025-03-11T13:08:43.120164+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2354,11 +2354,11 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcUserPlane
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcUserPlane-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcUserPlane-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 3.0.4
-    created: "2025-03-11T12:29:34.869234+01:00"
+    created: "2025-03-11T13:08:43.119158+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2375,12 +2375,12 @@ entries:
       name: Ayoub BOUSSELMI
     name: free5gcUserPlane
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/free5gcUserPlane-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/free5gcUserPlane-0.1.0.tgz
     version: 0.1.0
   networks5g:
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2025-03-11T12:29:34.871795+01:00"
+    created: "2025-03-11T13:08:43.122161+01:00"
     deprecated: true
     description: DEPRECATED - A Helm chart to deploy the user plane of free5gc
     digest: 89ad942bd85e1a3e9d6e9321f32f2ae03050c96d9e924fed7cd0fbabdd5b07b6
@@ -2392,11 +2392,11 @@ entries:
       name: Ilhem FAJJARI
     name: networks5g
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/networks5g-0.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/networks5g-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-03-11T12:29:34.871266+01:00"
+    created: "2025-03-11T13:08:43.121631+01:00"
     description: A Helm chart to deploy the user plane of free5gc
     digest: 51fd3eaf752f2406b62125facb7471f20d8d7cb0a0936779e1b33a90dd19ec28
     icon: https://upload.wikimedia.org/wikipedia/commons/6/6f/5G_logo.jpg
@@ -2407,11 +2407,11 @@ entries:
       name: Ilhem FAJJARI
     name: networks5g
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/networks5g-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/networks5g-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 3.0.4
-    created: "2025-03-11T12:29:34.870836+01:00"
+    created: "2025-03-11T13:08:43.121304+01:00"
     description: A Helm chart to deploy the user plane of free5gc
     digest: b9f3b1628aed64ab8ae898f63a7d4b1c6b11e8b9cd8bf0207665653f69c1a15b
     icon: https://upload.wikimedia.org/wikipedia/commons/6/6f/5G_logo.jpg
@@ -2422,39 +2422,39 @@ entries:
       name: Ilhem FAJJARI
     name: networks5g
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/networks5g-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/networks5g-0.1.0.tgz
     version: 0.1.0
   ssim:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-03-11T12:29:34.871943+01:00"
+    created: "2025-03-11T13:08:43.122311+01:00"
     description: A Helm chart to deploy SSI-M
-    digest: 417de19bc5797fb8c167345517b796ec86b1487c2a6d458145ee58a3a8e0f953
+    digest: c41a8c374706aa9afd4faf63ca88321b21a05626dfb4b41bb93b251be2d228bb
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
     maintainers:
     - email: haidinhtuan@gmail.com
       name: Hai Dinh-Tuan
     name: ssim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ssim-2.23.9.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ssim-2.23.9.tgz
     version: 2.23.9
   ueransim:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-03-11T12:29:34.884141+01:00"
+    created: "2025-03-11T13:08:43.133442+01:00"
     description: A Helm chart to deploy UERANSIM
-    digest: 384be9fbde050b8edaed228222fc403ea9d2b9a334bcfdc85fddaa6308c0b21e
+    digest: 90ecf5eef5b467cfab60b7fa8ccfa8f8b2903b807747dde5a8e21283953db612
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
     maintainers:
     - email: abderaouf.khichane@orange.com
       name: Abderaouf KHICHANE
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.17.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.17.tgz
     version: 2.0.17
   - apiVersion: v2
     appVersion: v3.2.6
-    created: "2025-03-11T12:29:34.883773+01:00"
+    created: "2025-03-11T13:08:43.133023+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 8d7695dac9e1a28e0e24f50288246f4ffde38582ba8509762296fb15993955e4
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2463,11 +2463,11 @@ entries:
       name: Abderaouf KHICHANE
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.16.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.16.tgz
     version: 2.0.16
   - apiVersion: v2
     appVersion: v3.2.6
-    created: "2025-03-11T12:29:34.88327+01:00"
+    created: "2025-03-11T13:08:43.132617+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: cc10abe44b863404d145cec532bff4b7d3ad9025519cfbd69e58a6822ceeb66c
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2478,11 +2478,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.15.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.15.tgz
     version: 2.0.15
   - apiVersion: v2
     appVersion: v3.2.6
-    created: "2025-03-11T12:29:34.882783+01:00"
+    created: "2025-03-11T13:08:43.132182+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 455f9b3513b1f87092c988e7fcb5bba3c2f76d14ee8315e4f5d6c0151cf06ebf
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2493,11 +2493,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.14.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.14.tgz
     version: 2.0.14
   - apiVersion: v2
     appVersion: v3.2.5
-    created: "2025-03-11T12:29:34.882231+01:00"
+    created: "2025-03-11T13:08:43.131747+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 53803f0d507dff4b4a9b96f8afd9ac71d5843c7becb2df735545092cb3fce0b7
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2508,11 +2508,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.13.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.13.tgz
     version: 2.0.13
   - apiVersion: v2
     appVersion: v3.2.4
-    created: "2025-03-11T12:29:34.881598+01:00"
+    created: "2025-03-11T13:08:43.131314+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 597c7e96fa53fb0913ca2702a85ff3fee12bbbd4a4eec1f7adadd9ab34588e92
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2523,11 +2523,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.12.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.12.tgz
     version: 2.0.12
   - apiVersion: v2
     appVersion: v3.2.3
-    created: "2025-03-11T12:29:34.880972+01:00"
+    created: "2025-03-11T13:08:43.130725+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 4a49a9ca839e5d9fd89e155737e3f0bbeee2266db3f00b20fbfceae4c8354cd9
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2538,11 +2538,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.11.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.11.tgz
     version: 2.0.11
   - apiVersion: v2
     appVersion: v3.2.2
-    created: "2025-03-11T12:29:34.880486+01:00"
+    created: "2025-03-11T13:08:43.130161+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 8a82426b6d7cf6e4f13ad7f0291040658f406cb93870a44fe7bebf7e9f387fb0
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2553,11 +2553,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.10.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.10.tgz
     version: 2.0.10
   - apiVersion: v2
     appVersion: v3.2.1
-    created: "2025-03-11T12:29:34.88856+01:00"
+    created: "2025-03-11T13:08:43.137105+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 225d33ecd196bdf334de605154a1afa067fd44c29eba41af09bb9785bd0d4947
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2568,11 +2568,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.9.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.9.tgz
     version: 2.0.9
   - apiVersion: v2
     appVersion: v3.2.0
-    created: "2025-03-11T12:29:34.88801+01:00"
+    created: "2025-03-11T13:08:43.136665+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: b5b450d15e62df7cd63be5dad6deede46877f127b76eaae551b5d12c2af25aa0
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2583,11 +2583,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.8.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.8.tgz
     version: 2.0.8
   - apiVersion: v2
     appVersion: v3.1.9
-    created: "2025-03-11T12:29:34.887493+01:00"
+    created: "2025-03-11T13:08:43.136232+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: da8ffc287f9cfb9de4fbfd761d06dc65b0bfad00e78c71f8190d170165721fa6
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2598,11 +2598,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.7.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.7.tgz
     version: 2.0.7
   - apiVersion: v2
     appVersion: v3.1.8
-    created: "2025-03-11T12:29:34.886969+01:00"
+    created: "2025-03-11T13:08:43.135738+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 583e190259db8c30cdb54eacde75a3574e069559238d011531330fc9caa3def5
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2613,11 +2613,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.6.tgz
     version: 2.0.6
   - apiVersion: v2
     appVersion: v3.1.7
-    created: "2025-03-11T12:29:34.886174+01:00"
+    created: "2025-03-11T13:08:43.135131+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 44ff62339df353d3ab37296717ae6cacd3fa12c29b815970040803676ed15a40
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2628,11 +2628,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.5.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.5.tgz
     version: 2.0.5
   - apiVersion: v2
     appVersion: v3.1.6
-    created: "2025-03-11T12:29:34.88563+01:00"
+    created: "2025-03-11T13:08:43.134707+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: cc63e0fba0663c9554f4bc9447547e215fe72b8998b049f829785f0b7261b38c
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2643,11 +2643,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.4.tgz
     version: 2.0.4
   - apiVersion: v2
     appVersion: v3.1.5
-    created: "2025-03-11T12:29:34.885122+01:00"
+    created: "2025-03-11T13:08:43.134287+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 3c33655099792a0efe3c0f069af4bfdda3a80924e9009ec7b4bb8146b7789b0e
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2658,11 +2658,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.3.tgz
     version: 2.0.3
   - apiVersion: v2
     appVersion: v3.1.4
-    created: "2025-03-11T12:29:34.884644+01:00"
+    created: "2025-03-11T13:08:43.133875+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 20487e5d1e6cfd277438e0fd5b01e18cad074c220f442cf814aec59d36796e3f
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2673,11 +2673,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.2.tgz
     version: 2.0.2
   - apiVersion: v2
     appVersion: v3.1.3
-    created: "2025-03-11T12:29:34.879975+01:00"
+    created: "2025-03-11T13:08:43.129714+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: 6d3af31549d6b13eaefe0b504f4d56dc18734fff1106b041469b6a2b800bba5b
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2688,11 +2688,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
     appVersion: v3.1.3
-    created: "2025-03-11T12:29:34.879444+01:00"
+    created: "2025-03-11T13:08:43.129281+01:00"
     description: A Helm chart to deploy UERANSIM
     digest: b2c9e30784ae031cef287decef2f87484918cd8e6d7272e60d44630a1b7074ef
     icon: https://raw.githubusercontent.com/aligungr/UERANSIM/master/.github/logo.png
@@ -2703,11 +2703,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-2.0.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
     appVersion: v3.1.3
-    created: "2025-03-11T12:29:34.878896+01:00"
+    created: "2025-03-11T13:08:43.128839+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2722,11 +2722,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.1.6.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.1.6.tgz
     version: 1.1.6
   - apiVersion: v2
     appVersion: v3.1.3
-    created: "2025-03-11T12:29:34.878153+01:00"
+    created: "2025-03-11T13:08:43.128207+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2741,11 +2741,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.1.4.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.1.4.tgz
     version: 1.1.4
   - apiVersion: v2
     appVersion: v3.1.3
-    created: "2025-03-11T12:29:34.877454+01:00"
+    created: "2025-03-11T13:08:43.127587+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2760,11 +2760,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.1.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.1.3.tgz
     version: 1.1.3
   - apiVersion: v2
     appVersion: v3.1.2
-    created: "2025-03-11T12:29:34.876851+01:00"
+    created: "2025-03-11T13:08:43.127068+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2779,11 +2779,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.1.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.1.2.tgz
     version: 1.1.2
   - apiVersion: v2
     appVersion: v3.1.1
-    created: "2025-03-11T12:29:34.875953+01:00"
+    created: "2025-03-11T13:08:43.126523+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2798,11 +2798,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.1.1.tgz
     version: 1.1.1
   - apiVersion: v2
     appVersion: v3.1.0
-    created: "2025-03-11T12:29:34.875389+01:00"
+    created: "2025-03-11T13:08:43.125949+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2817,11 +2817,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
     appVersion: v3.0.3
-    created: "2025-03-11T12:29:34.874806+01:00"
+    created: "2025-03-11T13:08:43.12519+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2836,11 +2836,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.0.3.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v2
     appVersion: v3.0.2
-    created: "2025-03-11T12:29:34.874253+01:00"
+    created: "2025-03-11T13:08:43.124663+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2855,11 +2855,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.0.2.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
     appVersion: v3.0.1
-    created: "2025-03-11T12:29:34.873658+01:00"
+    created: "2025-03-11T13:08:43.124119+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2874,11 +2874,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-1.0.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
     appVersion: 2.2.2
-    created: "2025-03-11T12:29:34.873062+01:00"
+    created: "2025-03-11T13:08:43.123582+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2893,11 +2893,11 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-0.1.1.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.2.1
-    created: "2025-03-11T12:29:34.872495+01:00"
+    created: "2025-03-11T13:08:43.122913+01:00"
     dependencies:
     - condition: createNetworks
       name: networks5g
@@ -2912,6 +2912,6 @@ entries:
       name: Ilhem FAJJARI
     name: ueransim
     urls:
-    - https://github.com/CarloSegat/free5gc-kubernetes-carlo/repo/ueransim-0.1.0.tgz
+    - https://haidinhtuan.github.io/free5gc-kubernetes/repo/ueransim-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-11T12:29:34.680309+01:00"
+generated: "2025-03-11T13:08:42.924581+01:00"

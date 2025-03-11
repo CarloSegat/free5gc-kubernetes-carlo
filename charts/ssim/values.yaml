@@ -29,7 +29,7 @@ acapy:
       ACAPY_ENDPOINT: "http://free5gc-core-free5gc-ssim-acapy-service:5555"
       ACAPY_LABEL: "SSIM"
       ACAPY_LOG_LEVEL: "info"
-      ACAPY_GENESIS_URL: "https://git.tu-berlin.de/research-projects/indy-cli-tutorial/-/raw/main/local_genesis.json"
+      ACAPY_GENESIS_URL: "hhttps://raw.githubusercontent.com/CarloSegat/free5gc-kubernetes-carlo/refs/heads/main/genesis.json"
       ADMIN_PORT: "7777"
       AGENT_PORT: "5555"
       SEED: "0123456789012345678901234567ssim"
