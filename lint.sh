@@ -11,9 +11,3 @@ helm package --destination ./repo/ ./charts/*
 
 # Generate Helm repository index
 helm repo index --url https://haidinhtuan.github.io/free5gc-kubernetes/ .
-
-# Commit changes to Git repository
-git add .
-git commit -m "update Helm chart"
-git push
-
