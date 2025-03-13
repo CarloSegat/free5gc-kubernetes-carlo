@@ -47,7 +47,7 @@ controller:
   env:
     NF_TYPE: ausf
     ISSUER_DID: "J2168i1E7NNH3T1ZAtowHx"
-    SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:1.6"
+    SCHEMA_ID: "J2168i1E7NNH3T1ZAtowHx:2:auth:1.7"
     CRED_DEF_ID: "J2168i1E7NNH3T1ZAtowHx:3:CL:14475:default"
     ACAPY_IP: "127.0.0.1"
     ACAPY_PORT: 7777
