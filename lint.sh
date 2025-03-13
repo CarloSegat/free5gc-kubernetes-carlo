@@ -2,7 +2,7 @@
 
 # Run helm lint on charts inside ./charts/free5gc/charts/
 helm lint ./charts/free5gc/charts/*
-helm lint ./charts/ssim/*
+helm lint ./charts/ssim/
 
 # Run helm lint on charts inside ./charts/
 helm lint ./charts/*
