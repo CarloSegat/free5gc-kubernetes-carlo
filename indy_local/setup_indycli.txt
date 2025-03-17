@@ -1,0 +1,36 @@
+pool create name=pool1 gen_txn_file=genesis.json
+pool connect name=pool1
+
+wallet create wallet1 key="key"
+wallet open wallet1 key="key"
+
+# steward needed to sign transactions
+# TODO figure if I can use method=indy
+did new seed=000000000000000000000000Steward1
+
+# create all dids used int he prototype locally i.e. wallet only
+did new method=indy seed="01234567890123456789012345678nrf"
+did new method=indy seed="01234567890123456789012345678amf"
+did new method=indy seed="0123456789012345678901234567ausf"
+did new method=indy seed="0123456789012345678901234567nssf"
+did new method=indy seed="01234567890123456789012345678pcf"
+did new method=indy seed="01234567890123456789012345678smf"
+did new method=indy seed="01234567890123456789012345678udm"
+did new method=indy seed="01234567890123456789012345678udr"
+did new method=indy seed="0123456789012345678901234567ssim"
+
+# activate steward did
+did use Th7MpTaRZVRYnPiabds81Y
+
+# anchor dids on ledger
+ledger nym did=did:indy:S3SuLKgDtfALEshJLsQ6s5 verkey=Eedhc5wQkgCXJkUCQWUEjmRx6z28dkNtm5G73s3twbJV
+ledger nym did=did:indy:KQmkmEHAUb59MCBWGvHL8u verkey=B2yNEvZE8iaRjXT2ZdZCk125KkT7WNMXGJ4dsZ8rqKmZ
+ledger nym did=did:indy:Y3vuh72yVH3JPokz868i9L verkey=HvZvy2CVv8jbQVwB1MwJ4gStirr35DJ2YhNfM2HH6UPK
+ledger nym did=did:indy:Wg2idaauZ9i2kQfRMUJh43 verkey=HB294bTxQ6QUXiFSJ6vjqnLF63f3bGEuFSNmPPMWiB8d
+ledger nym did=did:indy:R2oSXYqQLZ1wTDBQHZZcMH verkey=E6fngRthYKT21HxGFfhEzYHMsM2znNq4CpU1JHgkbRRF
+ledger nym did=did:indy:KGQpk9XCTeSb8iFUWRo61r verkey=AxR4c2XqWnC8qQKXqAuYDEupdwfuQRufQpY6ZKGtEwvJ
+ledger nym did=did:indy:E2j1vjdsNg2fLYm58tqQH2 verkey=86twSDaQLDk59QEr4a6Wo1zkRCkbBwbwJfjaLCgXk3D1
+ledger nym did=did:indy:TrheLkYW2NK6RAEHNrZDxc verkey=FdzzX65RX6njCbCRWFAM4h8UVZDsCgXvigKZU18GQKx3
+ledger nym did=did:indy:J2168i1E7NNH3T1ZAtowHx verkey=AGx4iGnhKadF8drPh263AV349YA5F3SWy1uF1VHJy8KQ
+
+exit
