@@ -56,7 +56,7 @@ mongodb:
 
 controller:
   name: controller
-  image: haidinhtuan/controller
+  image: carlossssssss/controller
   tag: latest
   service:
     type: ClusterIP
